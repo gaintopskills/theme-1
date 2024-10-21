@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import { Slider } from '../components/Slider.jsx'
 import { Hero } from '../components/Hero.jsx'
 import { Navbar } from '../components/Navbar.jsx'
 import { Features1 } from '../components/Features1.jsx'
@@ -19,6 +20,7 @@ import '../styles/Diagonals.css'
 
 <Layout title="Tailcast">
   <Navbar client:load />
+  <Slider client:load />
   <Hero client:load />
   <Features1 client:load />
   <Features2 client:load />
@@ -29,24 +31,7 @@ import '../styles/Diagonals.css'
   <Blog client:load />
   <FAQ client:load /> 
 <div class="other">
-<h1 style="color:#ffffff">Sample Elements</h1>
-        <div class="animated-text">
-            <div class="sp-container">
-                <div class="sp-content">
-                    <div class="sp-globe"></div>
-                    <h2 class="frame-1">E&R Unlimited Inc.</h2>
-                    <h2 class="frame-2">Embroidery</h2>
-                    <h2 class="frame-3">Patches</h2>
-                    <h2 class="frame-4">Sublimation</h2>
-                    <h2 class="frame-5">
-                        <span>Where quality</span>
-                        <span>and </span>
-                        <span>innovation matter.</span>
-                    </h2>
-                    <a class="sp-circle-link" href="https://nick.mkrtchyan.ga">by Nick</a>
-                </div>
-            </div>
-        </div>
+
         <h2 style="color:#ffffff">Sample Elements</h2>
 		<div class="animation-container">
             <div class="tagcloud-wrapper">
