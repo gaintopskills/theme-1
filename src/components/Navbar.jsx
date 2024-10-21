@@ -87,38 +87,32 @@ export const Navbar = () => {
                           <img
                             src="/list.jpg"
                             alt="List Image"
-                            className="w-40 h-40 mx-auto mb-3"
-                            style={{ width: '150px', height: '150px' }}
+                            className="mx-auto mb-3"
+                            style={{ width: '150px', height: '150px', paddingTop: '10px', objectFit: 'cover' }}
                           />
-                          <h3 className="text-white mb-3 text-xl w-40 text-center">Column 1</h3>
+                          <h3 className="text-white mb-3 text-xl w-40 text-center">Embroydery</h3>
                         </div>
 
-                        {/* Column 2 */}
+                        {/* Column 2 with image */}
                         <div className="mega-menu-column bg-black flex-1 px-8 w-40">
-                          <h3 className="text-white mb-3 text-xl w-40">Column 2</h3>
-                          <ul>
-                            {children.slice(0, 2).map((child) => (
-                              <li key={child.label}>
-                                <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
-                                  {child.label}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
+                          <img
+                            src="/list.jpg"
+                            alt="List Image"
+                            className="mx-auto mb-3"
+                            style={{ width: '150px', height: '150px', paddingTop: '10px', objectFit: 'cover' }}
+                          />
+                          <h3 className="text-white mb-3 text-xl w-40 text-center">Cut & Saw</h3>
                         </div>
 
-                        {/* Column 3 */}
+                        {/* Column 3 with image */}
                         <div className="mega-menu-column bg-black flex-1 px-8 rounded-tr-lg rounded-br-lg">
-                          <h3 className="text-white mb-3 text-xl w-40">Column 3</h3>
-                          <ul>
-                            {children.slice(2, 4).map((child) => (
-                              <li key={child.label}>
-                                <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
-                                  {child.label}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
+                          <img
+                            src="/list.jpg"
+                            alt="List Image"
+                            className="mx-auto mb-3"
+                            style={{ width: '150px', height: '150px', paddingTop: '10px', objectFit: 'cover' }}
+                          />
+                          <h3 className="text-white mb-3 text-xl w-40 text-center">Sublimation</h3>
                         </div>
                       </motion.div>
                     )}
