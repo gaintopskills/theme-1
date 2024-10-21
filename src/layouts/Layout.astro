@@ -726,8 +726,52 @@ h1.main, p.demos {
 		transform: scale(1) rotate(0deg);
 	}
 }
-/*animated text*/
+/*End animated text*/
 
+
+/*Scrollable Background*/
+
+.tiledBackground5 {
+    background: url("/bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position: center top;
+    padding: 20px 0;
+}
+.problems-item{background-color: rgba(10, 10, 10, 0.6); /* Semi-transparent background */
+padding: 15px; /* Gap inside the container */
+margin:15px 15px 0 15px;
+border-radius: 15px;}
+.maintext {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    display: grid; /* Use grid for responsive layout */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 15px; /* 15px gap between the columns */
+}
+
+.problems-item {
+    padding: 10px;
+}
+
+.problems-item p {
+    color: #fff;
+    text-align: justify;
+    margin: 0 0 10px 0;
+    padding: 0 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .maintext {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+    }
+}
+/*End Scrollable Background*/
     </style>
   </body>
 </html>

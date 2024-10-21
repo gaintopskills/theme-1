@@ -11,8 +11,6 @@ const navbarLinks = [
     href: '/#features',
     ariaLabel: 'Features',
     children: [
-      { label: 'Sub-feature 1', href: '/sub-feature1', ariaLabel: 'Sub-feature 1' },
-      { label: 'Sub-feature 2', href: '/sub-feature2', ariaLabel: 'Sub-feature 2' },
       { label: 'Sub-feature 3', href: '/sub-feature3', ariaLabel: 'Sub-feature 3' },
       { label: 'Sub-feature 4', href: '/sub-feature4', ariaLabel: 'Sub-feature 4' },
       { label: 'Sub-feature 5', href: '/sub-feature5', ariaLabel: 'Sub-feature 5' },
@@ -84,8 +82,20 @@ export const Navbar = () => {
                         exit={{ opacity: 0, y: -20 }}
                         className="absolute left-0 mt-2 w-full shadow-lg rounded-lg py-4 z-20 flex justify-between" // Flexbox for equal width columns
                       >
+                        {/* Column 1 with image */}
                         <div className="mega-menu-column bg-black flex-1 px-8 rounded-tl-lg rounded-bl-lg">
-                          <h3 className="text-white mb-3 text-xl w-40">Column 1</h3>
+                          <img
+                            src="/list.jpg"
+                            alt="List Image"
+                            className="w-40 h-40 mx-auto mb-3"
+                            style={{ width: '150px', height: '150px' }}
+                          />
+                          <h3 className="text-white mb-3 text-xl w-40 text-center">Column 1</h3>
+                        </div>
+
+                        {/* Column 2 */}
+                        <div className="mega-menu-column bg-black flex-1 px-8 w-40">
+                          <h3 className="text-white mb-3 text-xl w-40">Column 2</h3>
                           <ul>
                             {children.slice(0, 2).map((child) => (
                               <li key={child.label}>
@@ -97,23 +107,11 @@ export const Navbar = () => {
                           </ul>
                         </div>
 
-                        <div className="mega-menu-column bg-black flex-1 px-8 w-40">
-                          <h3 className="text-white mb-3 text-xl w-40">Column 2</h3>
-                          <ul>
-                            {children.slice(2, 4).map((child) => (
-                              <li key={child.label}>
-                                <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
-                                  {child.label}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
+                        {/* Column 3 */}
                         <div className="mega-menu-column bg-black flex-1 px-8 rounded-tr-lg rounded-br-lg">
                           <h3 className="text-white mb-3 text-xl w-40">Column 3</h3>
                           <ul>
-                            {children.slice(4).map((child) => (
+                            {children.slice(2, 4).map((child) => (
                               <li key={child.label}>
                                 <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
                                   {child.label}
@@ -175,7 +173,7 @@ export const Navbar = () => {
                         ) : (
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
                             {/* Down arrow */}
-                            <path fillRule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                            <path fillRule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
                           </svg>
                         )}
                       </span>
