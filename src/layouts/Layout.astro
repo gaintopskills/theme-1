@@ -40,7 +40,48 @@ const { title } = Astro.props;
       body{background-color: #000000 !important;}
 p{font-size:1.4em; color:white !important;}
 
+/*Logos*/
+/* Container for the scrolling logos */
+.logo-scroll-container {
+  overflow: hidden;
+  width: 100%; /* Adjust to your container size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
+/* Track containing all logos that will scroll */
+.logo-track {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  animation: scroll 20s linear infinite; /* Speed and direction of scroll */
+}
+
+/* Individual logo images */
+.logo-image {
+  width: 120px; /* Adjust logo size as needed */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Keyframe for infinite scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Make sure to repeat the logos so the scrolling looks infinite */
+.logo-track {
+  width: calc(240px * 10); /* Adjust based on the number of logos */
+}
+/*End Logos*/
 
 /* Other */
 

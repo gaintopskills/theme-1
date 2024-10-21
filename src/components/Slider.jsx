@@ -3,7 +3,6 @@ import React from 'react';
 export const Slider = () => {
   return (
     <div>
-      <h1 style={{ color: '#ffffff' }}>Sample Elements</h1>
       <div className="animated-text">
         <div className="sp-container">
           <div className="sp-content">
