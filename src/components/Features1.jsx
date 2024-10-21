@@ -5,7 +5,7 @@ import feature2 from "../assets/images/feature2.jpg";
 import feature3 from "../assets/images/feature3.jpg";
 import feature4 from "../assets/images/feature4.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
-
+import React from 'react';
 export const Features1 = () => {
   return (
     <section
@@ -89,3 +89,5 @@ export const Features1 = () => {
     </section>
   );
 };
+
+
