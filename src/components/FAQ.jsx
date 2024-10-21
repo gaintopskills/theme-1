@@ -25,7 +25,7 @@ const FAQData = [
 ];
 
 export const FAQ = () => (
-  <section className="relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 bg-blueGray-50 overflow-hidden">
+  <section className="relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 overflow-hidden">
     <div className="absolute -top-10" id="FAQ" />
     <motion.div
       initial={{ opacity: 0 }}
@@ -62,7 +62,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
 
   return (
     <div
-      className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition"
+      className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-black main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex flex-col p-2  justify-center items-start">

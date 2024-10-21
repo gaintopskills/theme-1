@@ -21,12 +21,16 @@ import { ScrollUpButton } from '../components/ScrollUpButton'
 import '../styles/Theme.css'
 import '../styles/Diagonals.css'
 
+
+import { StitchingAnimation } from '../components/StitchingAnimation.jsx'
 ---
 
 <Layout title="Tailcast">
   <Navbar client:load />
+
+  
   <div style="hight:100px; width:100%; background-color:black;"></div>
-  <Slider client:load />
+  <div style="background-color:#ffffff;"><StitchingAnimation client:load /></div>
   <Hero client:load />
   <Logos client:load /> 
   <LogosGlobe />
