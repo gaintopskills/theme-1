@@ -11,7 +11,7 @@ const logos = [
 export const Logos = () => {
   return (
     <div className="logo-scroll-container">
-      <p>Testing</p>
+     
       <div className="logo-track">
         {logos.map((logo, index) => (
           <img
