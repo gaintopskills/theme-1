@@ -1,66 +1,51 @@
-import React, { useEffect } from "react";
-import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.min.css";
-import "../styles/LocomotiveScroll.css"; // Import the CSS
+import { useRef } from "react";
 
-export const Gallery1 = () => {
-  useEffect(() => {
-    const scroll = new Gallery1({
-      el: document.querySelector(".scroll-animations-example"),
-      direction: "horizontal",
-      smooth: true,
-      lerp: 0.05,
-      tablet: {
-        smooth: true,
-      },
-      smartphone: {
-        smooth: true,
-      },
+export const CoolGallery = () => {
+  const galleryRef = useRef(null);
+
+  const scrollNext = () => {
+    galleryRef.current.scrollBy({
+      left: 300,
+      behavior: "smooth",
     });
+  };
 
-    const images = document.querySelectorAll(".image");
-
-    const showImages = () => {
-      images.forEach((image) => {
-        image.classList.remove("-clicked");
-        image.classList.add("-active");
-      });
-    };
-
-    const hideImages = () => {
-      images.forEach((image) => {
-        image.classList.remove("-active");
-      });
-      setTimeout(showImages, 2000);
-    };
-
-    images.forEach((image) => {
-      image.addEventListener("click", () => {
-        image.classList.add("-clicked");
-        hideImages();
-      });
+  const scrollPrev = () => {
+    galleryRef.current.scrollBy({
+      left: -300,
+      behavior: "smooth",
     });
-
-    setTimeout(showImages, 1000);
-
-    return () => {
-      scroll.destroy();
-    };
-  }, []);
+  };
 
   return (
-    <div className="scroll-container">
-      <div className="scroll-animations-example" data-scroll-container>
-        <div className="scrollsection" data-scroll-section>
-          <div className="item -normal" data-scroll data-scroll-speed="2">
-            <img className="image" src="https://picsum.photos/id/1005/300/400" alt="Image" />
+    <div className="gallery-wrapper">
+      <h1 className="gallery-title">Sample Of Our Work</h1>
+      <div className="gallery-container">
+        <div className="gallery" ref={galleryRef}>
+          <div className="card">
+            <img src="https://picsum.photos/id/1/300/400" alt="Image 1" />
           </div>
-          <div className="item -big" data-scroll data-scroll-speed="1">
-            <img className="image" src="https://picsum.photos/id/1019/600/800" alt="Image" />
+          <div className="card">
+            <img src="https://picsum.photos/id/2/300/400" alt="Image 2" />
           </div>
-          <div className="item -small -horizontal" data-scroll data-scroll-speed="4">
-            <img className="image" src="https://picsum.photos/id/1027/400/300" alt="Image" />
+          <div className="card">
+            <img src="https://picsum.photos/id/3/300/400" alt="Image 3" />
           </div>
+          <div className="card">
+            <img src="https://picsum.photos/id/4/300/400" alt="Image 4" />
+          </div>
+          <div className="card">
+            <img src="https://picsum.photos/id/5/300/400" alt="Image 5" />
+          </div>
+        </div>
+
+        <div className="controls">
+          <button onClick={scrollPrev} className="prev-btn">
+            Prev
+          </button>
+          <button onClick={scrollNext} className="next-btn">
+            Next
+          </button>
         </div>
       </div>
     </div>
