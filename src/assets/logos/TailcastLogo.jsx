@@ -1,12 +1,9 @@
 export const TailcastLogo = () => (
-  <svg
-    width="40"
-    height="40"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-    className="fill-primaryColor"
-  >
-    <path d="M11.3709 9.59273L8.77816 7L1 14.7782L3.59272 17.3709L11.3709 9.59273Z" />
-    <path d="M15.2218 7L23 14.7782L20.424 17.3542L15.2218 12.152L10.0197 17.3542L7.44367 14.7782L15.2218 7Z" />
-  </svg>
+  <img
+    src="/e-and-r-logo.png" // Path to your logo, assuming it's in the "public" folder
+    alt="E & R Unlimited Inc. Logo"
+    width="180"
+    height="30"
+    className="fill-primaryColor" // Optional: You can keep or remove this depending on your styling needs
+  />
 );
