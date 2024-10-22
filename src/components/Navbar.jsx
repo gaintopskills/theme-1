@@ -39,9 +39,7 @@ export const Navbar = () => {
               <div className="text-white mr-2 text-6xl">
                 <TailcastLogo />
               </div>
-              <div className="text-white font-['Inter'] font-bold text-xl">
-                
-              </div>
+              <div className="text-white font-['Inter'] font-bold text-xl"></div>
             </div>
           </a>
         </motion.div>
@@ -50,8 +48,17 @@ export const Navbar = () => {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} exit={{ opacity: 0 }}>
           <div className="hidden lg:flex h-full pl-12 pb-2">
             {navbarLinks.map(({ href, label, ariaLabel, children }) => (
-              <div key={label} className="relative" onMouseEnter={() => children && setSubMenuOpen(true)} onMouseLeave={() => children && setSubMenuOpen(false)}>
-                <a className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2" href={href} aria-label={ariaLabel}>
+              <div
+                key={label}
+                className="relative" // Ensure parent is relatively positioned
+                onMouseEnter={() => children && setSubMenuOpen(true)}
+                onMouseLeave={() => children && setSubMenuOpen(false)}
+              >
+                <a
+                  className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                  href={href}
+                  aria-label={ariaLabel}
+                >
                   {label}
 
                   {/* Arrow Icon */}
@@ -59,13 +66,18 @@ export const Navbar = () => {
                     <span className="ml-2">
                       {subMenuOpen ? (
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                          {/* Up arrow */}
-                          <path fillRule="evenodd" d="M14.707 10.707a1 1 0 01-1.414 0L10 7.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
+                          <path
+                            fillRule="evenodd"
+                            d="M14.707 10.707a1 1 0 01-1.414 0L10 7.414l-3.293-3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                            clipRule="evenodd"
+                          />
                         </svg>
                       ) : (
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                          {/* Down arrow */}
-                          <path fillRule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                          <path
+                            fillRule="evenodd"
+                            d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          />
                         </svg>
                       )}
                     </span>
@@ -81,39 +93,96 @@ export const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         className="absolute left-0 mt-2 w-full shadow-lg rounded-lg py-4 z-20 flex justify-between" // Flexbox for equal width columns
+                        style={{ left: "-380px", right: "auto" }} // Move submenu 200px to the left
                       >
                         {/* Column 1 with image */}
-                        <div className="mega-menu-column bg-black flex-1 px-8 rounded-tl-lg rounded-bl-lg">
+                        <div className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg">
                           <img
                             src="/list.jpg"
                             alt="List Image"
-                            className="mx-auto mb-3"
-                            style={{ width: '150px', height: '150px', paddingTop: '10px', objectFit: 'cover' }}
+                            className="mx-auto mb-1"
+                            style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
                           />
-                          <h3 className="text-white mb-3 text-xl w-40 text-center">Embroydery</h3>
+                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
                         </div>
 
-                        {/* Column 2 with image */}
-                        <div className="mega-menu-column bg-black flex-1 px-8 w-40">
+
+                          {/* Column 1 with image */}
+                          <div className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg">
                           <img
                             src="/list.jpg"
                             alt="List Image"
-                            className="mx-auto mb-3"
-                            style={{ width: '150px', height: '150px', paddingTop: '10px', objectFit: 'cover' }}
+                            className="mx-auto mb-1"
+                            style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
                           />
-                          <h3 className="text-white mb-3 text-xl w-40 text-center">Cut & Saw</h3>
+                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
                         </div>
 
-                        {/* Column 3 with image */}
-                        <div className="mega-menu-column bg-black flex-1 px-8 rounded-tr-lg rounded-br-lg">
+
+                           {/* Column 1 with image */}
+                           <div className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg">
                           <img
                             src="/list.jpg"
                             alt="List Image"
-                            className="mx-auto mb-3"
-                            style={{ width: '150px', height: '150px', paddingTop: '10px', objectFit: 'cover' }}
+                            className="mx-auto mb-1"
+                            style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
                           />
-                          <h3 className="text-white mb-3 text-xl w-40 text-center">Sublimation</h3>
+                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
                         </div>
+
+
+
+                          {/* Column 1 with image */}
+                          <div className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg">
+                          <img
+                            src="/list.jpg"
+                            alt="List Image"
+                            className="mx-auto mb-1"
+                            style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
+                          />
+                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
+                        </div>
+
+
+
+                          {/* Column 1 with image */}
+                          <div className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg">
+                          <img
+                            src="/list.jpg"
+                            alt="List Image"
+                            className="mx-auto mb-1"
+                            style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
+                          />
+                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
+                        </div>
+
+
+
+                         {/* Column 1 with image */}
+                         <div className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg">
+                          <img
+                            src="/list.jpg"
+                            alt="List Image"
+                            className="mx-auto mb-1"
+                            style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
+                          />
+                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
+                        </div>
+
+
+
+                         {/* Column 1 with image */}
+                         <div className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg">
+                          <img
+                            src="/list.jpg"
+                            alt="List Image"
+                            className="mx-auto mb-1"
+                            style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
+                          />
+                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
+                        </div>
+
+
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -161,13 +230,18 @@ export const Navbar = () => {
                       <span className="ml-2">
                         {subMenuOpen ? (
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                            {/* Up arrow */}
-                            <path fillRule="evenodd" d="M14.707 10.707a1 1 0 01-1.414 0L10 7.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
+                            <path
+                              fillRule="evenodd"
+                              d="M14.707 10.707a1 1 0 01-1.414 0L10 7.414l-3.293-3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                              clipRule="evenodd"
+                            />
                           </svg>
                         ) : (
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                            {/* Down arrow */}
-                            <path fillRule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                            <path
+                              fillRule="evenodd"
+                              d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            />
                           </svg>
                         )}
                       </span>
