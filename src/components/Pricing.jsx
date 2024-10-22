@@ -21,9 +21,9 @@ export const Pricing = () => {
   };
 
   return (
-    <section className="w-screen flex justify-center bg-bgDark2 relative">
+    <section className="w-screen flex justify-center bg-black relative">
       <div className="absolute -top-16" id="pricing" />
-      <div className="pb-20 pt-12 bg-bgDark2  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
+      <div className="pb-20 pt-12 bg-black  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -34,11 +34,10 @@ export const Pricing = () => {
             <div className="max-w-2xl mx-auto text-center mb-16">
               <span className="block-subtitle">Find Your Perfect Fit</span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-primaryText">
-                Choose your best plan
+                Services
               </h2>
               <p className="mb-6 text-secondaryText">
-                Select the plan that suits your needs and benefit from our
-                analytics tools.
+                High-End Services
               </p>
               <label className="mx-auto bg-bgDark3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
@@ -64,14 +63,14 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-bgDark3 rounded-3xl">
                   <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
-                    Beginner
+                    Embroidery
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
-                      $0
+                      
                     </div>
                     <div className="text-gray-500">
-                      {isMonthly ? "/ month" : "/ year"}
+                      
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
@@ -97,14 +96,14 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="px-8 py-8 bg-bgDark3 rounded-3xl">
                   <h3 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-primaryText text-left">
-                    Standard
+                    Sublimation
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
-                      {isMonthly ? "$19" : "$180"}
+                      
                     </div>
                     <div className="text-gray-500">
-                      {isMonthly ? "/ month" : "/ year"}
+                      
                     </div>
                   </div>
                   <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
@@ -130,14 +129,14 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-bgDark3 rounded-3xl">
                   <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
-                    Premium
+                    Screen Printing
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
-                      {isMonthly ? "$36" : "$390"}
+                      
                     </div>
                     <div className="text-gray-500">
-                      {isMonthly ? "/ month" : "/ year"}
+                      
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
