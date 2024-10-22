@@ -15,25 +15,19 @@ import { FAQ } from '../components/FAQ.jsx'
 import { Brands } from '../components/Brands.jsx'
 import { Logos } from '../components/Logos.jsx'
 import { Blog } from '../components/Blog'
-
 import { Footer } from '../components/Footer.jsx'
 import { ScrollUpButton } from '../components/ScrollUpButton'
 import '../styles/Theme.css'
 import '../styles/Diagonals.css'
-
 
 import { StitchingAnimation } from '../components/StitchingAnimation.jsx'
 ---
 
 <Layout title="Tailcast">
   <Navbar client:load />
-
-
   <StitchingAnimation client:load />
-
   <Logos client:load /> 
   <Gallery1 client:load /> 
-
    <div class="tiledBackground5">
         <div id="price-list"></div>
         <div class="maintext problems">
@@ -52,5 +46,4 @@ import { StitchingAnimation } from '../components/StitchingAnimation.jsx'
   <FAQ client:load /> 
   <Footer />
   <ScrollUpButton client:load />
-
 </Layout>

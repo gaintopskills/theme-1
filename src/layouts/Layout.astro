@@ -871,78 +871,40 @@ border-radius: 15px;}
 
 
 /*Gallery1*/
-/* Overall gallery container and full-width styling */
-.gallery-wrapper {
-  background-color: black;
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.gallery-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: white;
-}
-
-/* Fullscreen width gallery container */
-.gallery-container {
+.image-container {
   position: relative;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.gallery {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
   display: flex;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  gap: 20px;
-}
-
-.card {
-  min-width: 300px;
-  min-height: 400px;
-  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card img {
+.fade-in-image {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Controls for next/prev buttons */
-.controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+/* When the image is visible, set opacity to 1 */
+.fade-in-image.visible {
+  opacity: 1;
 }
 
-.prev-btn, .next-btn {
-  background-color: white;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 0 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+/* Half screen on mobile */
+@media (max-width: 768px) {
+  .image-container {
+    height: 50vh; /* Half-screen height on mobile */
+  }
 
-.prev-btn:hover, .next-btn:hover {
-  background-color: #cccccc;
+  .fade-in-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
-
 /*End Gallery1*/
     </style>
   </body>

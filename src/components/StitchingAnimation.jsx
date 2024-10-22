@@ -1,28 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from "react";
 
 export const StitchingAnimation = () => {
-  const [showSubtitle, setShowSubtitle] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    // Trigger the fade-in effect after the component mounts
     const timer = setTimeout(() => {
-      setShowSubtitle(true);
-    }, 500); 
-    return () => clearTimeout(timer);
+      setIsVisible(true);
+    }, 100); // 100ms delay to ensure smooth fade-in
+
+    return () => clearTimeout(timer); // Clean up the timer on unmount
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-black">
-      <svg viewBox="0 0 1200 300" className="w-full h-auto px-8">
-        <text className="banner-text font-dancing text-[10vw] text-white" x="50%" y="50%" dominantBaseline="middle" textAnchor="middle">
-          E & R Unlimited Inc.
-        </text>
-      </svg>
-
-      {showSubtitle && (
-        <div className="fade-in mt-4 text-white p-4 text-3xl transition-opacity opacity-100">
-          Where quality and innovation matter.
-        </div>
-      )}
+    <div className="image-container">
+      <img
+        src="/1-2.png" // Assuming the image is placed in the "public" folder
+        alt="Fading Image"
+        className={`fade-in-image ${isVisible ? "visible" : ""}`}
+      />
     </div>
   );
 };
