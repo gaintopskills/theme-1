@@ -786,7 +786,7 @@ border-radius: 15px;}
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full screen height */
-  background-color: black;
+  background-color: black; /* Black background */
   position: relative;
 }
 
@@ -799,21 +799,27 @@ border-radius: 15px;}
   font-family: 'Dancing Script', cursive;
   font-size: 10vw;
   fill: none;
-  stroke: white;
+  stroke: white; /* White text color */
   stroke-width: 2;
   stroke-dasharray: 1500;
   stroke-dashoffset: 1500;
-  animation: write-text 4s ease-in-out forwards;
+  animation: write-text 3s ease-in-out forwards; /* Animation duration */
   dominant-baseline: middle;
   text-anchor: middle;
 }
 
+.white-bg-box {
+  fill: white; /* White background for the box */
+  opacity: 0;
+  animation: fade-in-box 1s ease-in 3s forwards; /* Delayed to appear after text */
+}
+
 .fade-in-text {
   font-family: 'Dancing Script', cursive;
-  font-size: 3vw;
-  fill: white;
+  font-size: 4vw;
+  fill: black; /* Black text */
   opacity: 0;
-  animation: fade-in 2s ease-in 6s forwards; /* Fades in after the main text is written */
+  animation: fade-in 1s ease-in 3s forwards; /* Delayed to appear after the box */
   text-anchor: middle;
 }
 
@@ -831,13 +837,20 @@ border-radius: 15px;}
   }
 }
 
+/* Fade-in effect for the white background box */
+@keyframes fade-in-box {
+  to {
+    opacity: 1;
+  }
+}
+
 /* Responsive adjustments */
 @media (min-width: 1024px) {
   .banner-text {
     font-size: 8vw;
   }
   .fade-in-text {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }
 
@@ -846,7 +859,7 @@ border-radius: 15px;}
     font-size: 12vw;
   }
   .fade-in-text {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -855,7 +868,7 @@ border-radius: 15px;}
     font-size: 14vw;
   }
   .fade-in-text {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 }
 
