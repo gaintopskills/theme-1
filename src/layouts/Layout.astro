@@ -784,78 +784,57 @@ border-radius: 15px;}
 .responsive-banner-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full screen height */
-  background-color: black;
-  position: relative;
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Full height for the banner on larger screens */
+  background-color: black; /* Black background */
 }
 
 .responsive-banner-svg {
-  width: 100%;
+  width: 100%; /* Full width SVG */
   height: 100%;
 }
 
 .banner-text {
   font-family: 'Dancing Script', cursive;
-  font-size: 10vw;
+  font-size: 10vw; /* Responsive font size, scales with viewport width */
   fill: none;
-  stroke: white;
+  stroke: white; /* White text color */
   stroke-width: 2;
-  stroke-dasharray: 1500;
-  stroke-dashoffset: 1500;
-  animation: write-text 4s ease-in-out forwards;
-  dominant-baseline: middle;
-  text-anchor: middle;
-}
-
-.fade-in-text {
-  font-family: 'Dancing Script', cursive;
-  font-size: 3vw;
-  fill: white;
-  opacity: 0;
-  animation: fade-in 2s ease-in 6s forwards; /* Fades in after the main text is written */
-  text-anchor: middle;
+  stroke-dasharray: 1500; /* Adjust the path length */
+  stroke-dashoffset: 1500; /* Start with text hidden */
+  animation: write-text 4s ease-in-out forwards; /* Animation duration and effect */
+  dominant-baseline: middle; /* Vertically center the text */
+  text-anchor: middle; /* Horizontally center the text */
 }
 
 /* Animation for handwriting effect */
 @keyframes write-text {
   to {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 0; /* Reveal the text gradually */
   }
 }
 
-/* Fade-in effect for the second line */
-@keyframes fade-in {
-  to {
-    opacity: 1;
-  }
-}
-
-/* Responsive adjustments */
+/* Responsive adjustments for larger screens */
 @media (min-width: 1024px) {
   .banner-text {
-    font-size: 8vw;
-  }
-  .fade-in-text {
-    font-size: 2.5vw;
+    font-size: 8vw; /* Smaller font size for large screens */
   }
 }
 
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-  .banner-text {
-    font-size: 12vw;
+  .responsive-banner-container {
+    height: 50vh; /* Make the banner half-screen on mobile */
   }
-  .fade-in-text {
-    font-size: 4vw;
+
+  .banner-text {
+    font-size: 12vw; /* Slightly larger font size for tablets */
   }
 }
 
 @media (max-width: 480px) {
   .banner-text {
-    font-size: 14vw;
-  }
-  .fade-in-text {
-    font-size: 5vw;
+    font-size: 14vw; /* Larger font size for mobile phones */
   }
 }
     </style>
