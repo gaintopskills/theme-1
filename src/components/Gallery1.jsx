@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export const CoolGallery = () => {
+export const Gallery1 = () => {
   const galleryRef = useRef(null);
 
   const scrollNext = () => {
