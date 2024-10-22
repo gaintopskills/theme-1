@@ -19,7 +19,7 @@ export const StitchingAnimation = () => {
       </svg>
 
       {showSubtitle && (
-        <div className="fade-in mt-4 text-black bg-white p-4 text-3xl transition-opacity opacity-100">
+        <div className="fade-in mt-4 text-white p-4 text-3xl transition-opacity opacity-100">
           Where quality and innovation matter.
         </div>
       )}
