@@ -137,9 +137,6 @@ export const Footer = () => {
       </div>
 
       {/* Oversized "E & R Unlimited" Text */}
-      <div className="bg-black text-white text-center p-4" style={{ marginBottom: 0, paddingBottom: 0 }}>
-        <div className="text-[13vw] font-bold leading-none">E & R Unlimited</div>
-      </div>
     </footer>
   );
 };
