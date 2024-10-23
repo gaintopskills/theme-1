@@ -178,15 +178,14 @@ export const Navbar = () => {
           </div>
         </motion.div>
 
-        {/* GitHub link */}
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} exit={{ opacity: 0 }}>
-          <div className="grow basis-0 justify-end hidden lg:flex">
-            <a className="text-white main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex" href="https://github.com/matt765/Tidestream" target="_blank" aria-label="source code">
-              <GithubIcon />
-              <span className="pt-px">Source code</span>
-            </a>
-          </div>
-        </motion.div>
+        {/* Phone Number Link */}
+<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} exit={{ opacity: 0 }}>
+  <div className="grow basis-0 justify-end hidden lg:flex">
+    <a className="text-white main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex" href="tel:+13235843000" aria-label="call phone number">
+      <span className="pt-px">(323) 584-3000</span>
+    </a>
+  </div>
+</motion.div>
 
         {/* Mobile hamburger menu */}
         <div className="lg:hidden flex flex-col px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-bgDark2" onClick={() => setIsOpen(!isOpen)}>
@@ -211,28 +210,24 @@ export const Navbar = () => {
                   >
                     {label}
 
-                    {/* Arrow Icon */}
-                    {children && (
-                      <span className="ml-2">
-                        {subMenuOpen ? (
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                            <path
-                              fillRule="evenodd"
-                              d="M14.707 10.707a1 1 0 01-1.414 0L10 7.414l-3.293-3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        ) : (
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                            <path
-                              fillRule="evenodd"
-                              d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            />
-                          </svg>
-                        )}
-                      </span>
-                    )}
-                  </a>
+       {/* Arrow Icon */}
+{children && (
+  <span className="ml-2">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={`h-4 w-4 inline-block transition-transform duration-300 ${subMenuOpen ? 'rotate-180' : 'rotate-0'}`}
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fillRule="evenodd"
+        d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+        clipRule="evenodd"
+      />
+    </svg>
+  </span>
+)}
+
 
                   {/* Show submenu when "Features" is clicked */}
                   {children && subMenuOpen && (
