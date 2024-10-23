@@ -103,19 +103,19 @@ export const Navbar = () => {
                             className="mx-auto mb-1"
                             style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
                           />
-                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
+                          <h3 className="text-white mb-1 text-lg w-36 text-center">Embroidery</h3>
                         </div>
 
 
                           {/* Column 1 with image */}
-                          <div className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg">
+                          <div className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg ">
                           <img
                             src="/list.jpg"
                             alt="List Image"
                             className="mx-auto mb-1"
                             style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
                           />
-                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
+                          <h3 className="text-white mb-1 text-lg w-36 text-center">Screen Printing</h3>
                         </div>
 
 
@@ -127,7 +127,7 @@ export const Navbar = () => {
                             className="mx-auto mb-1"
                             style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
                           />
-                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
+                          <h3 className="text-white mb-1 text-lg w-36 text-center">Digital Sublimation</h3>
                         </div>
 
 
@@ -140,7 +140,7 @@ export const Navbar = () => {
                             className="mx-auto mb-1"
                             style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
                           />
-                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
+                          <h3 className="text-white mb-1 text-lg w-36 text-center">Direct To Garment Printing (DTG)</h3>
                         </div>
 
 
@@ -153,7 +153,7 @@ export const Navbar = () => {
                             className="mx-auto mb-1"
                             style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
                           />
-                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
+                          <h3 className="text-white mb-1 text-lg w-36 text-center">Cut and Saw</h3>
                         </div>
 
 
@@ -166,22 +166,8 @@ export const Navbar = () => {
                             className="mx-auto mb-1"
                             style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
                           />
-                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
+                          <h3 className="text-white mb-1 text-lg w-36 text-center">Blank Apparel</h3>
                         </div>
-
-
-
-                         {/* Column 1 with image */}
-                         <div className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg">
-                          <img
-                            src="/list.jpg"
-                            alt="List Image"
-                            className="mx-auto mb-1"
-                            style={{ width: '130px', height: '130px', paddingTop: '10px', objectFit: 'cover' }}
-                          />
-                          <h3 className="text-white mb-1 text-xl w-35 text-center">Embroidery</h3>
-                        </div>
-
 
                       </motion.div>
                     )}
