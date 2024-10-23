@@ -9,7 +9,7 @@ const navbarLinks = [
   {
     label: 'Features',
     href: '/#features',
-    ariaLabel: 'Features',
+    ariaLabel: 'Services',
     children: [
       { label: 'Sub-feature 3', href: '/sub-feature3', ariaLabel: 'Sub-feature 3' },
       { label: 'Sub-feature 4', href: '/sub-feature4', ariaLabel: 'Sub-feature 4' },
@@ -205,29 +205,33 @@ export const Navbar = () => {
                   <a
                     href={href}
                     className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
-                    onClick={children && label === 'Features' ? toggleSubMenu : () => setIsOpen(false)} // Toggle submenu on "Features" click
+                    onClick={children && label === '' ? toggleSubMenu : () => setIsOpen(false)} // Toggle submenu on "Features" click
                     aria-label={ariaLabel}
                   >
                     {label}
 
-       {/* Arrow Icon */}
-{children && (
-  <span className="ml-2">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className={`h-4 w-4 inline-block transition-transform duration-300 ${subMenuOpen ? 'rotate-180' : 'rotate-0'}`}
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path
-        fillRule="evenodd"
-        d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-        clipRule="evenodd"
-      />
-    </svg>
-  </span>
-)}
-
+                    {/* Arrow Icon */}
+                    {children && (
+                      <span className="ml-2">
+                        {subMenuOpen ? (
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                              fillRule="evenodd"
+                              d="M14.707 10.707a1 1 0 01-1.414 0L10 7.414l-3.293-3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                        ) : (
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                              fillRule="evenodd"
+                              d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            />
+                          </svg>
+                        )}
+                      </span>
+                    )}
+                  </a>
 
                   {/* Show submenu when "Features" is clicked */}
                   {children && subMenuOpen && (
