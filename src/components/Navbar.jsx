@@ -81,7 +81,7 @@ export const Navbar = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute mt-2 w-full shadow-lg rounded-lg py-2 z-20 flex justify-center gap-2"
+                        className="absolute mt-2 w-full shadow-lg rounded-lg py-2 z-20 flex justify-center gap-2 bg-black"
                         style={{ left: '100px' }} // Shift dropdown 100px to the right
                       >
                         {children.map((child) => (
