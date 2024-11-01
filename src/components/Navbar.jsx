@@ -48,11 +48,11 @@ export const Navbar = () => {
 
         {/* Desktop Main menu links */}
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} exit={{ opacity: 0 }}>
-          <div className="hidden lg:flex h-full pl-12 pb-2">
+          <div className="hidden lg:flex h-full pl-4 pb-2">
             {navbarLinks.map(({ href, label, ariaLabel, children }) => (
               <div key={label} className="relative" onMouseEnter={() => children && setSubMenuOpen(true)} onMouseLeave={() => children && setSubMenuOpen(false)}>
                 <a
-                  className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2 flex items-center"
+                  className="text-white lg:text-base text-2xl leading-6 mr-2 ml-2 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2 flex items-center"
                   href={href}
                   aria-label={ariaLabel}
                   onClick={children ? toggleSubMenu : null}
@@ -81,25 +81,24 @@ export const Navbar = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute mt-2 w-full shadow-lg rounded-lg py-4 z-20 flex justify-start"
+                        className="absolute mt-2 w-full shadow-lg rounded-lg py-2 z-20 flex justify-center gap-2"
                       >
-                        {/* Columns offset by 380px */}
-                        {children.map((child, index) => (
+                        {children.map((child) => (
                           <div
                             key={child.label}
-                            className="mega-menu-column bg-black flex-1 px-1 rounded-tl-lg rounded-bl-lg"
-                            style={{ transform: index < 6 ? 'translateX(-380px)' : 'none' }}
+                            className="mega-menu-column bg-black px-2 flex-1 rounded-lg"
+                            style={{ transform: 'translateX(-380px)' }}
                           >
                             <img
                               src="/list.jpg"
                               alt="List Image"
-                              className="w-36 h-36 mx-auto mb-1"
-                              style={{ width: '130px', height: '130px' }}
+                              className="w-28 h-28 mx-auto mb-1"
+                              style={{ width: '110px', height: '110px' }}
                             />
-                            <h3 className="text-white mb-1 text-xl w-36 text-center">{child.label}</h3>
+                            <h3 className="text-white mb-1 text-lg w-28 text-center">{child.label}</h3>
                             <ul>
                               <li>
-                                <a href={child.href} className="block px-2 py-1 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
+                                <a href={child.href} className="block px-2 py-1 text-white hover:bg-gray-700 rounded w-full" aria-label={child.ariaLabel}>
                                   {child.label}
                                 </a>
                               </li>
@@ -118,7 +117,7 @@ export const Navbar = () => {
         {/* GitHub link */}
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} exit={{ opacity: 0 }}>
           <div className="grow basis-0 justify-end hidden lg:flex">
-            <a className="text-white main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex" href="https://github.com/matt765/Tidestream" target="_blank" aria-label="source code">
+            <a className="text-white main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-4 pr-6 pt-2 pb-2 text-sm flex" href="https://github.com/matt765/Tidestream" target="_blank" aria-label="source code">
               <span className="pt-px">Call: (323)584-3000</span>
             </a>
           </div>
@@ -141,7 +140,7 @@ export const Navbar = () => {
                 <div key={label} className="relative">
                   <a
                     href={href}
-                    className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2 flex items-center"
+                    className="text-white lg:text-base text-2xl leading-6 mr-2 ml-2 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2 flex items-center"
                     onClick={children && label === 'Features' ? toggleSubMenu : () => setIsOpen(false)}
                     aria-label={ariaLabel}
                   >
@@ -162,7 +161,7 @@ export const Navbar = () => {
                   </a>
 
                   {children && subMenuOpen && (
-                    <ul className="pl-4">
+                    <ul className="pl-2">
                       {children.map((child) => (
                         <li key={child.label}>
                           <a href={child.href} className="text-white text-lg py-1 block hover:scale-110 transition duration-300" onClick={() => setIsOpen(false)}>
@@ -174,7 +173,7 @@ export const Navbar = () => {
                   )}
                 </div>
               ))}
-              <a className="outlined-button pl-6 pr-8 pt-2 pb-2 flex" href="https://github.com/matt765/Tidestream" target="_blank">
+              <a className="outlined-button pl-4 pr-6 pt-2 pb-2 flex" href="https://github.com/matt765/Tidestream" target="_blank">
                 Call: (323)584-3000
               </a>
             </div>
