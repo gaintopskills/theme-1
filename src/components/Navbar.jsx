@@ -25,8 +25,8 @@ const navbarLinks = [
 ];
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // Mobile menu state
-  const [subMenuOpen, setSubMenuOpen] = useState(false); // Submenu open/close state for "Features"
+  const [isOpen, setIsOpen] = useState(false);
+  const [subMenuOpen, setSubMenuOpen] = useState(false);
 
   const toggleSubMenu = () => {
     setSubMenuOpen(!subMenuOpen);
@@ -48,26 +48,27 @@ export const Navbar = () => {
           </a>
         </motion.div>
 
-        {/* Main menu links */}
+        {/* Desktop Main menu links */}
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} exit={{ opacity: 0 }}>
           <div className="hidden lg:flex h-full pl-12 pb-2">
             {navbarLinks.map(({ href, label, ariaLabel, children }) => (
               <div key={label} className="relative" onMouseEnter={() => children && setSubMenuOpen(true)} onMouseLeave={() => children && setSubMenuOpen(false)}>
-                <a className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2" href={href} aria-label={ariaLabel}>
+                <a
+                  className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2 flex items-center"
+                  href={href}
+                  aria-label={ariaLabel}
+                  onClick={children ? toggleSubMenu : null}
+                >
                   {label}
-
-                  {/* Arrow Icon */}
                   {children && (
-                    <span className="ml-2">
+                    <span className="ml-1">
                       {subMenuOpen ? (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                          {/* Up arrow */}
-                          <path fillRule="evenodd" d="M14.707 10.707a1 1 0 01-1.414 0L10 7.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                          <path d="M5 15l7-7 7 7" />
                         </svg>
                       ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                          {/* Down arrow */}
-                          <path fillRule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                          <path d="M19 9l-7 7-7-7" />
                         </svg>
                       )}
                     </span>
@@ -82,135 +83,31 @@ export const Navbar = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute left-0 mt-2 w-full shadow-lg rounded-lg py-4 z-20 flex justify-between" // Flexbox for equal width columns
+                        className="absolute mt-2 w-full shadow-lg rounded-lg py-4 z-20 flex justify-between"
                       >
-                        {/* Column 1 with image */}
-                        <div className="mega-menu-column bg-black flex-1 px-8 rounded-tl-lg rounded-bl-lg">
-                          <img
-                            src="/list.jpg"
-                            alt="List Image"
-                            className="w-40 h-40 mx-auto mb-3"
-                            style={{ width: '150px', height: '150px' }}
-                          />
-                          <h3 className="text-white mb-3 text-xl w-40 text-center">Column 1</h3>
-                          <ul>
-                            {children.slice(0, 1).map((child) => (
-                              <li key={child.label}>
+                        {/* Columns offset by 380px */}
+                        {children.map((child, index) => (
+                          <div
+                            key={child.label}
+                            className="mega-menu-column bg-black flex-1 px-2 rounded-tl-lg rounded-bl-lg"
+                            style={{ transform: index < 6 ? 'translateX(-380px)' : 'none' }}
+                          >
+                            <img
+                              src="/list.jpg"
+                              alt="List Image"
+                              className="w-36 h-36 mx-auto mb-1"
+                              style={{ width: '130px', height: '130px' }}
+                            />
+                            <h3 className="text-white mb-1 text-xl w-36 text-center">{child.label}</h3>
+                            <ul>
+                              <li>
                                 <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
                                   {child.label}
                                 </a>
                               </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        {/* Column 1a with image */}
-                        <div className="mega-menu-column bg-black flex-1 px-8 rounded-tl-lg rounded-bl-lg">
-                          <img
-                            src="/list.jpg"
-                            alt="List Image"
-                            className="w-40 h-40 mx-auto mb-3"
-                            style={{ width: '150px', height: '150px' }}
-                          />
-                          <h3 className="text-white mb-3 text-xl w-40 text-center">Column 1</h3>
-                          <ul>
-                            {children.slice(1, 2).map((child) => (
-                              <li key={child.label}>
-                                <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
-                                  {child.label}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                         {/* Column 1a with image */}
-                         <div className="mega-menu-column bg-black flex-1 px-8 rounded-tl-lg rounded-bl-lg">
-                          <img
-                            src="/list.jpg"
-                            alt="List Image"
-                            className="w-40 h-40 mx-auto mb-3"
-                            style={{ width: '150px', height: '150px' }}
-                          />
-                          <h3 className="text-white mb-3 text-xl w-40 text-center">Column 1</h3>
-                          <ul>
-                            {children.slice(1, 2).map((child) => (
-                              <li key={child.label}>
-                                <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
-                                  {child.label}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                         {/* Column 1a with image */}
-                         <div className="mega-menu-column bg-black flex-1 px-8 rounded-tl-lg rounded-bl-lg">
-                          <img
-                            src="/list.jpg"
-                            alt="List Image"
-                            className="w-40 h-40 mx-auto mb-3"
-                            style={{ width: '150px', height: '150px' }}
-                          />
-                          <h3 className="text-white mb-3 text-xl w-40 text-center">Column 1</h3>
-                          <ul>
-                            {children.slice(1, 2).map((child) => (
-                              <li key={child.label}>
-                                <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
-                                  {child.label}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                         {/* Column 1a with image */}
-                         <div className="mega-menu-column bg-black flex-1 px-8 rounded-tl-lg rounded-bl-lg">
-                          <img
-                            src="/list.jpg"
-                            alt="List Image"
-                            className="w-40 h-40 mx-auto mb-3"
-                            style={{ width: '150px', height: '150px' }}
-                          />
-                          <h3 className="text-white mb-3 text-xl w-40 text-center">Column 1</h3>
-                          <ul>
-                            {children.slice(1, 2).map((child) => (
-                              <li key={child.label}>
-                                <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
-                                  {child.label}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        {/* Column 2 */}
-                        <div className="mega-menu-column bg-black flex-1 px-8 w-40">
-                          <h3 className="text-white mb-3 text-xl w-40">Column 2</h3>
-                          <ul>
-                            {children.slice(0, 2).map((child) => (
-                              <li key={child.label}>
-                                <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
-                                  {child.label}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        {/* Column 3 */}
-                        <div className="mega-menu-column bg-black flex-1 px-8 rounded-tr-lg rounded-br-lg">
-                          <h3 className="text-white mb-3 text-xl w-40">Column 3</h3>
-                          <ul>
-                            {children.slice(2, 4).map((child) => (
-                              <li key={child.label}>
-                                <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
-                                  {child.label}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                            </ul>
+                          </div>
+                        ))}
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -225,7 +122,7 @@ export const Navbar = () => {
           <div className="grow basis-0 justify-end hidden lg:flex">
             <a className="text-white main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex" href="https://github.com/matt765/Tidestream" target="_blank" aria-label="source code">
               <GithubIcon />
-              <span className="pt-px">Source code</span>
+              <span className="pt-px">Call: (323)584-3000</span>
             </a>
           </div>
         </motion.div>
@@ -247,31 +144,26 @@ export const Navbar = () => {
                 <div key={label} className="relative">
                   <a
                     href={href}
-                    className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
-                    onClick={children && label === 'Features' ? toggleSubMenu : () => setIsOpen(false)} // Toggle submenu on "Features" click
+                    className="text-white lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2 flex items-center"
+                    onClick={children && label === 'Features' ? toggleSubMenu : () => setIsOpen(false)}
                     aria-label={ariaLabel}
                   >
                     {label}
-
-                    {/* Arrow Icon */}
                     {children && (
-                      <span className="ml-2">
+                      <span className="ml-1">
                         {subMenuOpen ? (
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                            {/* Up arrow */}
-                            <path fillRule="evenodd" d="M14.707 10.707a1 1 0 01-1.414 0L10 7.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                            <path d="M5 15l7-7 7 7" />
                           </svg>
                         ) : (
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block" viewBox="0 0 20 20" fill="currentColor">
-                            {/* Down arrow */}
-                            <path fillRule="evenodd" d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                            <path d="M19 9l-7 7-7-7" />
                           </svg>
                         )}
                       </span>
                     )}
                   </a>
 
-                  {/* Show submenu when "Features" is clicked */}
                   {children && subMenuOpen && (
                     <ul className="pl-4">
                       {children.map((child) => (
@@ -286,8 +178,7 @@ export const Navbar = () => {
                 </div>
               ))}
               <a className="outlined-button pl-6 pr-8 pt-2 pb-2 flex" href="https://github.com/matt765/Tidestream" target="_blank">
-                <GithubIcon />
-                Source code
+                Call: (323)584-3000
               </a>
             </div>
           </motion.div>
