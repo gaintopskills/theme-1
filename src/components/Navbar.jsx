@@ -41,9 +41,7 @@ export const Navbar = () => {
               <div className="text-white mr-2 text-6xl">
                 <TailcastLogo />
               </div>
-              <div className="text-white font-['Inter'] font-bold text-xl">
-                
-              </div>
+              <div className="text-white font-['Inter'] font-bold text-xl"></div>
             </div>
           </a>
         </motion.div>
@@ -83,7 +81,7 @@ export const Navbar = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute mt-2 w-full shadow-lg rounded-lg py-4 z-20 flex justify-between"
+                        className="absolute mt-2 w-full shadow-lg rounded-lg py-4 z-20 flex justify-start"
                       >
                         {/* Columns offset by 380px */}
                         {children.map((child, index) => (
@@ -101,7 +99,7 @@ export const Navbar = () => {
                             <h3 className="text-white mb-1 text-xl w-36 text-center">{child.label}</h3>
                             <ul>
                               <li>
-                                <a href={child.href} className="block px-4 py-2 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
+                                <a href={child.href} className="block px-2 py-1 text-white hover:bg-gray-700 rounded w-40" aria-label={child.ariaLabel}>
                                   {child.label}
                                 </a>
                               </li>
@@ -121,7 +119,6 @@ export const Navbar = () => {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} exit={{ opacity: 0 }}>
           <div className="grow basis-0 justify-end hidden lg:flex">
             <a className="text-white main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex" href="https://github.com/matt765/Tidestream" target="_blank" aria-label="source code">
-             
               <span className="pt-px">Call: (323)584-3000</span>
             </a>
           </div>
