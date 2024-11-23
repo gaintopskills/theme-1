@@ -30,9 +30,10 @@ export const Features2 = () => (
               Screen Printing
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              Collaborate seamlessly with your team using our integrated tools.
-              Share updates, assign tasks, and work together to solve challenges
-              with ease.
+            Elevate your designs with our expert screen printing services, perfect for custom apparel, promotional products, and brand merchandise. Screen printing is ideal for bold, long-lasting designs on t-shirts, hoodies, and other garments.
+
+Our process uses high-quality inks and precise techniques to deliver vibrant, durable prints that stand the test of time. Whether you're outfitting a team, promoting an event, or creating branded clothing, our screen printing ensures professional results on a wide range of fabrics and colors.
+
             </p>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
               Direct To Garment
@@ -52,26 +53,28 @@ export const Features2 = () => (
               DTG
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              Collaborate seamlessly with your team using our integrated tools.
-              Share updates, assign tasks, and work together to solve challenges
-              with ease.
-            </p>
+            Our Direct-to-Garment (DTG) printing services deliver exceptional quality and precision, making them perfect for promotional companies, fashion events, and clothing labels.
+</p>
+<p>Our advanced DTG technology ensures a smooth, high-quality finish, even on dark fabrics. The result? A light, breathable feel that looks and feels amazing.</p>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
               Cuts & Saw
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              Collaborate seamlessly with your team using our integrated tools.
-              Share updates, assign tasks, and work together to solve challenges
-              with ease.
+            Bring your creative vision to life with our professional cut-and-sew services crafted to match your specifications. Ideal for custom clothing brands, promotional apparel, and one-of-a-kind designs, our services offer complete customization to make your garments truly stand out.</p>
+
+<p>From precise fabric cutting to expert stitching, we craft high-quality, tailored pieces that reflect your unique style and brand identity. Whether you're designing custom t-shirts, hoodies, or complex apparel items, our cut-and-sew services ensure impeccable quality and attention to detail.
             </p>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
               Blank Apparel
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              Collaborate seamlessly with your team using our integrated tools.
-              Share updates, assign tasks, and work together to solve challenges
-              with ease.
-            </p>
+            Explore our high-quality blank apparel, perfect for screen printing, embroidery, DTG printing, and more. Whether you're creating custom designs for a clothing brand, promotional merchandise, or team uniforms, our blank garments provide the ideal canvas for your creativity.</p>
+
+<p>We offer a wide range of styles, including t-shirts, hoodies, polos, and more, in various sizes, colors, and fabrics to suit your needs. Designed for comfort and durability, our blank apparel is the perfect foundation for stunning, customized results.
+
+Start your custom project with our versatile blank apparel—crafted to bring your designs to life.
+
+Contact us today to place your order!            </p>
           </div>
         </div>
       </div>
