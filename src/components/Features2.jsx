@@ -24,7 +24,7 @@ export const Features2 = () => (
 
 <p>We create precise, vibrant designs with high-quality finishes using advanced stitching techniques and premium threads. Whether you need a professional logo, intricate design, or personalized text, our embroidery services deliver lasting results on a variety of fabrics.</p>
 
-<p>Elevate your brand with our exceptional embroidery solutions - designed for style and durability.</p>
+<p>Elevate your brand with our exceptional embroidery solutions - designed for style and durability.
             </p>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
               Screen Printing
