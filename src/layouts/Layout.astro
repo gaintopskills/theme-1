@@ -658,13 +658,24 @@ border-radius: 15px;}
 }
 
 /* Initial state of the image (hidden and smaller) */
+.image-container {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-color: black; /* Full-screen black background */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers the image */
+  overflow: hidden; /* Ensures no scrollbars if the image overflows */
+}
+
 .fade-in-image {
-  width: 100%; /* Ensures the image stretches full screen */
-  height: 100%; /* Ensures the image stretches full screen */
-  object-fit: cover; /* Ensures the image scales without distortion */
+  width: 100%; /* Adjust image to the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Ensure the image doesn't exceed container height */
+  object-fit: contain; /* Ensures the image fits fully without distortion */
   opacity: 0;
   transform: scale(0.9); /* Starts slightly zoomed out */
-  transition: opacity 4s ease, transform 4s ease; /* Slower, smooth transition */
+  transition: opacity 4s ease, transform 4s ease; /* Smooth transition */
 }
 
 /* Visible state for the image (fades in while zooming in) */
@@ -672,7 +683,6 @@ border-radius: 15px;}
   opacity: 1;
   transform: scale(1); /* Zooms in to full size */
 }
-
 /*End Fade in bg at the top */
     </style>
   </body>
