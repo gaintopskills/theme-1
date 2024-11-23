@@ -12,42 +12,64 @@ export const Features2 = () => (
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.2 }}
     >
-      <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
-        <div className="w-11/12 sm:w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 justify-center order-last lg:order-first">
-          <div className="mb-8 lg:mb-0 w-full px-2 lg:pl-16 flex flex-col justify-center md:pl-8">
-            <div className="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
-         <p> Issue tracking you’ll enjoy using. Monitor and track data issues with ease using our intuitive and efficient issue tracking system. Stay ahead of potential problems and improve your workflow.</p>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
-          <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-            <span className="block-subtitle">Make Data-Driven Decisions</span>
+      <div className="flex flex-wrap items-start 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
+        {/* Left Section */}
+        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start mb-12 lg:mb-0 lg:pr-8">
+          <div className="w-11/12 sm:w-3/4 mx-auto lg:w-full flex flex-col">
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              Issue tracking you’ll enjoy using
+              Embroidery
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
               Monitor and track data issues with ease using our intuitive and
               efficient issue tracking system. Stay ahead of potential problems
               and improve your workflow.
             </p>
-            <ul className="mb-6 text-primaryText">
-              <li className="mb-4 flex">
-                <CheckArrowIcon />
-                <span>Collaborative environment</span>
-              </li>
-              <li className="mb-4 flex">
-                <CheckArrowIcon />
-                <span>Smart issue categorization</span>
-              </li>
-              <li className="mb-4 flex">
-                <CheckArrowIcon />
-                <span>Customizable notifications</span>
-              </li>
-            </ul>
+            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
+              Screen Printing
+            </h2>
+            <p className="mb-12 text-secondaryText leading-loose">
+              Collaborate seamlessly with your team using our integrated tools.
+              Share updates, assign tasks, and work together to solve challenges
+              with ease.
+            </p>
+            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
+              Direct To Garment
+            </h2>
+            <p className="mb-12 text-secondaryText leading-loose">
+              Collaborate seamlessly with your team using our integrated tools.
+              Share updates, assign tasks, and work together to solve challenges
+              with ease.
+            </p>
+          </div>
+        </div>
+
+        {/* Right Section */}
+        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start">
+          <div className="w-11/12 sm:w-3/4 mx-auto lg:w-full flex flex-col">
+            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
+              Powerful collaboration tools
+            </h2>
+            <p className="mb-12 text-secondaryText leading-loose">
+              Collaborate seamlessly with your team using our integrated tools.
+              Share updates, assign tasks, and work together to solve challenges
+              with ease.
+            </p>
+            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
+              Powerful collaboration tools
+            </h2>
+            <p className="mb-12 text-secondaryText leading-loose">
+              Collaborate seamlessly with your team using our integrated tools.
+              Share updates, assign tasks, and work together to solve challenges
+              with ease.
+            </p>
+            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
+              Powerful collaboration tools
+            </h2>
+            <p className="mb-12 text-secondaryText leading-loose">
+              Collaborate seamlessly with your team using our integrated tools.
+              Share updates, assign tasks, and work together to solve challenges
+              with ease.
+            </p>
           </div>
         </div>
       </div>
