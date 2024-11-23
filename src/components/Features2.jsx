@@ -20,9 +20,7 @@ export const Features2 = () => (
               Embroidery
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              Monitor and track data issues with ease using our intuitive and
-              efficient issue tracking system. Stay ahead of potential problems
-              and improve your workflow.
+              We offer high-quality products from custom patches to intricate full embroidery applications.
             </p>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
               Screen Printing
@@ -36,10 +34,10 @@ export const Features2 = () => (
               Direct To Garment
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              Collaborate seamlessly with your team using our integrated tools.
-              Share updates, assign tasks, and work together to solve challenges
-              with ease.
-            </p>
+            Our Direct-to-Garment (DTG) printing services deliver exceptional quality and precision, making them perfect for promotional companies, fashion events, and clothing labels.
+</p>
+<p>Our advanced DTG technology ensures a smooth, high-quality finish, even on dark fabrics. The result? A light, breathable feel that looks and feels amazing.</p>
+            
           </div>
         </div>
 
@@ -47,7 +45,7 @@ export const Features2 = () => (
         <div className="w-full lg:w-1/2 flex flex-col justify-start items-start">
           <div className="w-11/12 sm:w-3/4 mx-auto lg:w-full flex flex-col">
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              Powerful collaboration tools
+              DTG
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
               Collaborate seamlessly with your team using our integrated tools.
@@ -55,7 +53,7 @@ export const Features2 = () => (
               with ease.
             </p>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              Powerful collaboration tools
+              Cuts & Saw
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
               Collaborate seamlessly with your team using our integrated tools.
@@ -63,7 +61,7 @@ export const Features2 = () => (
               with ease.
             </p>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              Powerful collaboration tools
+              Blank Apparel
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
               Collaborate seamlessly with your team using our integrated tools.
