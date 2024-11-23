@@ -632,6 +632,48 @@ border-radius: 15px;}
 }
 /*End Oversized Leters in the Footer*/
 
+/*Fade in bg at the top */
+/* Styling for the image container */
+.image-container {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures no overflow issues */
+}
+
+/* Initial state of the image (hidden and transparent) */
+/* Styling for the image container */
+.image-container {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures no overflow issues */
+  background: black; /* Optional: Black background for contrast */
+}
+
+/* Initial state of the image (hidden and smaller) */
+.fade-in-image {
+  width: 100%; /* Ensures the image stretches full screen */
+  height: 100%; /* Ensures the image stretches full screen */
+  object-fit: cover; /* Ensures the image scales without distortion */
+  opacity: 0;
+  transform: scale(0.9); /* Starts slightly zoomed out */
+  transition: opacity 4s ease, transform 4s ease; /* Slower, smooth transition */
+}
+
+/* Visible state for the image (fades in while zooming in) */
+.fade-in-image.visible {
+  opacity: 1;
+  transform: scale(1); /* Zooms in to full size */
+}
+
+/*End Fade in bg at the top */
     </style>
   </body>
 </html>

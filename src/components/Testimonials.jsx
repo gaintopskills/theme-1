@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import testimonial1 from "../assets/images/high-end-embroidery-patches-los-angeles.webp";
 import testimonial2 from "../assets/images/high-volume-patches-los-angeles.webp";
-import testimonial3 from "../assets/images/high-end-embroidery-patches-los-angeles.webp";
+import testimonial3 from "../assets/images/fashion-embroidery-patches-los-angeles-1.webp";
 
 const testimonialsData = [
   {
