@@ -20,7 +20,11 @@ export const Features2 = () => (
               Embroidery
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              We offer high-quality products from custom patches to intricate full embroidery applications.
+            We offer high-end embroidery services that combine sophistication and durability and add a high-quality finish to your garments. Perfect for custom apparel, uniforms, promotional products and more. </p>
+
+<p>We create precise, vibrant designs with high-quality finishes using advanced stitching techniques and premium threads. Whether you need a professional logo, intricate design, or personalized text, our embroidery services deliver lasting results on a variety of fabrics.</p>
+
+<p>Elevate your brand with our exceptional embroidery solutions - designed for style and durability.</p>
             </p>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
               Screen Printing
