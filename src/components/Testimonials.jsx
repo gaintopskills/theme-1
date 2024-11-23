@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 
 import { QuoteIcon } from "../assets/icons/QuoteIcon";
-import testimonial1 from "../assets/images/testimonial1.png";
-import testimonial2 from "../assets/images/testimonial2.png";
-import testimonial3 from "../assets/images/testimonial3.png";
+import testimonial1 from "../assets/images/high-end-embroidery-patches-los-angeles.webp";
+import testimonial2 from "../assets/images/high-volume-patches-los-angeles.webp";
+import testimonial3 from "../assets/images/high-end-embroidery-patches-los-angeles.webp";
 
 const testimonialsData = [
   {
+    heading: "Outstanding Analytics",
     customerName: "John Watkins",
     customerTitle: "Founder of Dashflow",
     content:
@@ -14,17 +15,19 @@ const testimonialsData = [
     image: testimonial1,
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    heading: "Incredible Support",
+    customerName: "Jane Doe",
+    customerTitle: "CEO of BrightTech",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+      "The team at Tailcast has provided exceptional support. Their timely responses and expert advice have ensured our business runs smoothly. It's a pleasure working with such a dedicated team.",
     image: testimonial2,
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    heading: "Streamlined Processes",
+    customerName: "Alex Smith",
+    customerTitle: "COO of TechFlow",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+      "Tailcast's platform has streamlined our workflows, allowing us to focus more on growth. The ease of use and practical features make it a valuable asset for any organization.",
     image: testimonial3,
   },
 ];
@@ -50,20 +53,26 @@ export const Testimonials = () => (
               className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4"
               key={`${testimonial.customerName}-${index}`}
             >
+              {/* Render image above heading */}
+              <div className="flex justify-center mb-4">
+                <img
+                  src={testimonial.image.src}
+                  alt="Customer avatar"
+                  className="w-24 h-24 rounded-full"
+                  aria-label={testimonial.customerName}
+                />
+              </div>
+
+              {/* Render dynamic heading */}
+              <h1 className="text-white text-2xl font-bold mb-4">
+                {testimonial.heading}
+              </h1>
+
               <div className="flex mb-2">
                 <QuoteIcon />
               </div>
               <div className="content-text-white">"{testimonial.content}"</div>
               <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
-                <div>
-                  <img
-                    src={testimonial.image.src}
-                    alt="Customer avatar"
-                    width="45px"
-                    height="5px"
-                    aria-label={testimonial.customerName}
-                  />
-                </div>
                 <div className="flex flex-col ml-4">
                   <div className="content-text-white font-medium">
                     {testimonial.customerName}
