@@ -1,33 +1,25 @@
 import { motion } from "framer-motion";
-
-import { QuoteIcon } from "../assets/icons/QuoteIcon";
 import testimonial1 from "../assets/images/high-end-embroidery-patches-los-angeles.webp";
 import testimonial2 from "../assets/images/high-volume-patches-los-angeles.webp";
 import testimonial3 from "../assets/images/high-end-embroidery-patches-los-angeles.webp";
 
 const testimonialsData = [
   {
-    heading: "Outstanding Analytics",
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    heading: "Unlimited Potential",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+      "Our core embellishment techniques, in one house, can be combined to create stunning results!",
     image: testimonial1,
   },
   {
-    heading: "Incredible Support",
-    customerName: "Jane Doe",
-    customerTitle: "CEO of BrightTech",
+    heading: "High Quality",
     content:
-      "The team at Tailcast has provided exceptional support. Their timely responses and expert advice have ensured our business runs smoothly. It's a pleasure working with such a dedicated team.",
+      "With over 30 years of experience in the fashion industry, we are ready to take on any project that you can imagine.",
     image: testimonial2,
   },
   {
-    heading: "Streamlined Processes",
-    customerName: "Alex Smith",
-    customerTitle: "COO of TechFlow",
+    heading: "High Volume",
     content:
-      "Tailcast's platform has streamlined our workflows, allowing us to focus more on growth. The ease of use and practical features make it a valuable asset for any organization.",
+      "From simple samples to full-fledged production of 15,000 + units.",
     image: testimonial3,
   },
 ];
@@ -42,46 +34,32 @@ export const Testimonials = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.4, delay: 0.3 }}
       >
-        <div className="block-subtitle text-center mb-6">3 features</div>
-        <div className="block-big-title text-center mb-20 px-8 sm:px-24 md:px-48">
-          People like you love Tailcast
-        </div>
-
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-stretch">
           {testimonialsData.map((testimonial, index) => (
             <div
-              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4"
-              key={`${testimonial.customerName}-${index}`}
+              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 main-border-gray-darker rounded-xl bg-black flex flex-col px-6 py-4 items-center text-center h-full"
+              key={`${testimonial.heading}-${index}`}
             >
               {/* Render image above heading */}
               <div className="flex justify-center mb-4">
                 <img
                   src={testimonial.image.src}
                   alt="Customer avatar"
-                  className="w-24 h-24 rounded-full"
-                  aria-label={testimonial.customerName}
+                  className="w-32 h-32 rounded-full"
+                  aria-label={testimonial.heading}
                 />
               </div>
 
               {/* Render dynamic heading */}
-              <h1 className="text-white text-2xl font-bold mb-4">
-                {testimonial.heading}
-              </h1>
+              <h1 className="text-white text-2xl font-bold mb-4">{testimonial.heading}</h1>
 
-              <div className="flex mb-2">
-                <QuoteIcon />
-              </div>
-              <div className="content-text-white">"{testimonial.content}"</div>
-              <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
-                <div className="flex flex-col ml-4">
-                  <div className="content-text-white font-medium">
-                    {testimonial.customerName}
-                  </div>
-                  <div className="content-text-gray">
-                    {testimonial.customerTitle}
-                  </div>
-                </div>
-              </div>
+              {/* Center content */}
+              <div
+                className="content-text-white"
+                dangerouslySetInnerHTML={{
+                  __html: testimonial.content,
+                }}
+              ></div>
             </div>
           ))}
         </div>
