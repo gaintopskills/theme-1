@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import feature5 from "../assets/images/feature5.jpg";
 import feature6 from "../assets/images/feature6.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import embroidery from "../assets/images/embroidery.webp";
 
 export const Features2 = () => (
   <section className="w-full bg-black mt-12 sm:mt-24 mb-12 lg:my-20 lg:mb-24 pt-4">
@@ -16,6 +17,11 @@ export const Features2 = () => (
         {/* Left Section */}
         <div className="w-full lg:w-1/2 flex flex-col justify-start items-start mb-12 lg:mb-0 lg:pr-8">
           <div className="w-11/12 sm:w-3/4 mx-auto lg:w-full flex flex-col">
+             <img
+            src={embroidery}
+            alt="Screen Printing Services"
+            className="w-1/3 lg:w-1/4 mr-6 rounded-md"
+          />
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
               Embroidery
             </h2>
@@ -74,7 +80,7 @@ Our process uses high-quality inks and precise techniques to deliver vibrant, du
 
 Start your custom project with our versatile blank apparel—crafted to bring your designs to life.
 
-Contact us today to place your order!            </p>
+Contact us today to place your order! </p>
           </div>
         </div>
       </div>
