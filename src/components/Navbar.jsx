@@ -7,9 +7,9 @@ import { GithubIcon } from '../assets/icons/GithubIcon';
 const navbarLinks = [
   { label: 'Home', href: '/#home', ariaLabel: 'Home' },
   {
-    label: 'Features',
+    label: 'Services',
     href: '/#features',
-    ariaLabel: 'Features',
+    ariaLabel: 'Services',
     children: [
       { label: 'Embroidery', href: '/sub-feature3', ariaLabel: 'Sub-feature 3' },
       { label: 'Screen Printing', href: '/sub-feature4', ariaLabel: 'Sub-feature 4' },
@@ -19,9 +19,10 @@ const navbarLinks = [
       { label: 'Blank Apparel', href: '/sub-feature6', ariaLabel: 'Sub-feature 6' },
     ],
   },
-  { label: 'Pricing', href: '/#pricing', ariaLabel: 'Pricing' },
-  { label: 'Feedback', href: '/#feedback', ariaLabel: 'Feedback' },
-  { label: 'FAQ', href: '/#FAQ', ariaLabel: 'FAQ' },
+  { label: 'Galley', href: '/#pricing', ariaLabel: 'Galley' },
+  { label: 'Events', href: '/#feedback', ariaLabel: 'Events' },
+  { label: 'Free Quote', href: '/#FAQ', ariaLabel: 'Free Quote' },
+  { label: 'Contact Us', href: '/#FAQ', ariaLabel: 'Contact Us' },
 ];
 
 export const Navbar = () => {
@@ -141,7 +142,7 @@ export const Navbar = () => {
                   <a
                     href={href}
                     className="text-white lg:text-base text-2xl leading-6 mr-2 ml-2 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2 flex items-center"
-                    onClick={children && label === 'Features' ? toggleSubMenu : () => setIsOpen(false)}
+                    onClick={children && label === 'Services' ? toggleSubMenu : () => setIsOpen(false)}
                     aria-label={ariaLabel}
                   >
                     {label}
