@@ -4,7 +4,6 @@ import feature5 from "../assets/images/feature5.jpg";
 import feature6 from "../assets/images/feature6.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import embroidery from "../assets/images/blog3.png";
-import img from "../assets/images/IMG_2417-2.jpg"
 
 export const Features2 = () => (
   <section className="w-full bg-black mt-12 sm:mt-24 mb-12 lg:my-20 lg:mb-24 pt-4">
@@ -23,7 +22,7 @@ export const Features2 = () => (
               Embroidery
             </h2>
             <img
-            src="../IMG_2417-2.jpg"
+            src=""
             alt="Screen Printing Services"
             className="w-1/3 lg:w-1/4 mr-6 rounded-md"
           />
