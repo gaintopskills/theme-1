@@ -1,11 +1,11 @@
 import React from 'react';
 
 const logos = [
-  { src: '/by-logo.jpg', alt: 'Logo 1' },
-  { src: '/by-logo.jpg', alt: 'Logo 2' },
-  { src: '/by-logo.jpg', alt: 'Logo 3' },
-  { src: '/by-logo.jpg', alt: 'Logo 4' },
-  { src: '/by-logo.jpg', alt: 'Logo 5' },
+  { src: '/30-seconds-to-mars.png', alt: 'Logo 1' },
+  { src: '/frame-denim.png', alt: 'Logo 2' },
+  { src: '/joes.png', alt: 'Logo 3' },
+  { src: '/levis.png', alt: 'Logo 4' },
+  { src: '/NTWRK.png', alt: 'Logo 5' },
 ];
 
 export const Logos = () => {
