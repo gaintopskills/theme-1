@@ -96,7 +96,7 @@ export const Navbar = () => {
                               className="w-28 h-28 mx-auto mb-1"
                               style={{ width: '110px', height: '110px' }}
                             />
-                            <h3 className="text-white mb-1 text-lg w-28 text-center">{child.label}</h3>
+                            <h3 className="text-white mb-1 text-lg w-28 text-center hover:bg-gray-700 transition duration-300 rounded-md">{child.label}</h3>
                             <ul>
                               <li>
                                 <a href={child.href} className="block px-2 py-1 text-white hover:bg-gray-700 rounded w-full" aria-label={child.ariaLabel}>
