@@ -11,12 +11,13 @@ const navbarLinks = [
     href: '/#features',
     ariaLabel: 'Services',
     children: [
-      { label: 'Embroidery', href: '/sub-feature3', ariaLabel: 'Sub-feature 3' },
-      { label: 'Screen Printing', href: '/sub-feature4', ariaLabel: 'Sub-feature 4' },
-      { label: 'DTG', href: '/sub-feature5', ariaLabel: 'Sub-feature 5' },
-      { label: 'Digital Sublimation', href: '/sub-feature6', ariaLabel: 'Sub-feature 6' },
-      { label: 'Cut & Saw', href: '/sub-feature6', ariaLabel: 'Sub-feature 6' },
-      { label: 'Blank Apparel', href: '/sub-feature6', ariaLabel: 'Sub-feature 6' },
+      { label: 'Embroidery', href: '/sub-feature3', ariaLabel: 'Sub-feature 3', image: '/menu3.jpg' },
+      { label: 'Screen Printing', href: '/sub-feature4', ariaLabel: 'Sub-feature 4', image: '/menu2.jpg' },
+      { label: 'DTG', href: '/sub-feature5', ariaLabel: 'Sub-feature 5', image: '/menu1.jpg' },
+      { label: 'Digital Sublimation', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu4.jpg' },
+      { label: 'Heat Transfer', href: '/sub-feature7', ariaLabel: 'Sub-feature 7', image: '/menu2.jpg' },
+      { label: 'Cut & Saw', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu5.jpg' },
+      { label: 'Blank Apparel', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu6.jpg' },
     ],
   },
   { label: 'Galley', href: '/#pricing', ariaLabel: 'Galley' },
@@ -76,34 +77,26 @@ export const Navbar = () => {
 
                 {/* Mega Menu for "Features" */}
                 {children && (
-                  <AnimatePresence>
-                    {subMenuOpen && (
-                      <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        className="absolute mt-2 w-full shadow-lg rounded-lg py-2 z-20 flex justify-center gap-2 bg-black"
-                        style={{ left: '100px' }} // Shift dropdown 100px to the right
-                      >
-                        {children.map((child) => (
-                          <div
-                            key={child.label}
-                            className="mega-menu-column bg-black px-2 flex-1 rounded-lg"
-                          >
-                            <img
-                              src="/menu1.jpg"
-                              alt="List Image"
-                              className="w-28 h-28 mx-auto mb-1"
-                              style={{ width: '110px', height: '130px' }}
-                            />
-                            <h3 className="text-white mb-1 text-lg w-28 text-center hover:bg-gray-700 transition duration-300 rounded-md">{child.label}</h3>
-                            
-                          </div>
-                        ))}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                )}
+  <AnimatePresence>
+    {subMenuOpen && (
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        className="absolute mt-2 w-full shadow-lg rounded-lg py-2 z-20 flex justify-center gap-2 bg-black"
+      >
+        {children.map((child) => (
+          <div key={child.label} className="mega-menu-column bg-black px-2 flex-1 rounded-lg">
+            <img src={child.image} alt={child.label} className="w-28 h-28 mx-auto mb-1" style={{ width: '100px', height: '120px' }} />
+            <h3 className="text-white mb-1 text-lg w-28 text-center hover:bg-gray-700 transition duration-300 rounded-md">
+              {child.label}
+            </h3>
+          </div>
+        ))}
+      </motion.div>
+    )}
+  </AnimatePresence>
+)}
               </div>
             ))}
           </div>
