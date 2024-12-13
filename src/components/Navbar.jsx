@@ -111,13 +111,13 @@ export const Navbar = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute left-0 top-full w-screen bg-black shadow-lg z-20 flex justify-evenly py-4 gap-1"
+                        className="absolute left-0 top-full w-screen bg-black shadow-lg z-20 flex justify-evenly py-4 gap-1 bg-opacity-70 rounded-md "
                         style={{ left: '-450px' }} // Offset the submenu to the left by 300px
                       >
                         {children.map((child) => (
                           <div
                             key={child.label}
-                            className="mega-menu-column flex flex-col items-center bg-black px-1 rounded-md"
+                            className="mega-menu-column flex flex-col items-center bg-black px-1 rounded-md bg-opacity-80 "
                           >
                             <img
                               src={child.image}
