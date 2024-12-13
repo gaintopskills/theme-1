@@ -163,8 +163,23 @@ import '../styles/Diagonals.css'
 
 <!-- End Services Section -->
 
+<div class="relative h-screen bg-fixed bg-cover bg-center" style="background-image: url('/eventbg.jpg');">
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
   
-   <div class="tiledBackground5">
+  <!-- Content Section with Blurred Background -->
+  <div class="absolute inset-0 flex justify-center items-center">
+    <div class="bg-black bg-opacity-50 backdrop-blur-md rounded-lg text-center p-8 max-w-lg text-white">
+      <h1 class="text-5xl font-extrabold mb-6">Parallax Header</h1>
+      <p class="text-lg mb-6">
+        This section features a combination of a blurred black background and modern parallax design trends to ensure your content is both visually appealing and readable.
+      </p>
+      <a href="#" class="px-6 py-3 bg-blue-500 rounded-md hover:bg-blue-600">Take Action</a>
+    </div>
+  </div>
+</div>
+
+  <!-- <div class="tiledBackground5">
         <div id="price-list"></div>
         <div class="maintext problems">
             <div class="problems-item">
@@ -180,13 +195,12 @@ For serious inquiries, use the form for a FREE quote.</p>
 <li>Embroidery speed per request is as fast as 30 seconds</li></ul>
 
             </div>
-        </div>
+        </div>-->
 
 
         
 
-     
-
+  
 
 
   <Footer />
