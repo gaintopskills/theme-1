@@ -91,10 +91,10 @@ export const Navbar = () => {
                             className="mega-menu-column bg-black px-2 flex-1 rounded-lg"
                           >
                             <img
-                              src="/list.jpg"
+                              src="/menu1.jpg"
                               alt="List Image"
                               className="w-28 h-28 mx-auto mb-1"
-                              style={{ width: '110px', height: '110px' }}
+                              style={{ width: '110px', height: '130px' }}
                             />
                             <h3 className="text-white mb-1 text-lg w-28 text-center hover:bg-gray-700 transition duration-300 rounded-md">{child.label}</h3>
                             
