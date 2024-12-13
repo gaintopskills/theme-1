@@ -84,9 +84,10 @@ export const Navbar = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         className="absolute mt-2 w-full shadow-lg rounded-lg py-2 z-20 flex justify-center gap-0"
+        style={{ left: '110px' }}
       >
         {children.map((child) => (
-          <div key={child.label} className="mega-menu-column bg-black px-2 flex-1">
+          <div key={child.label} className="mega-menu-column px-2 flex-1 bg-black">
             <img src={child.image} alt={child.label} className="w-28 h-28 mx-auto mb-1" style={{ width: '100px', height: '120px' }} />
             <h3 className="text-white mb-1 text-lg w-28 text-center hover:bg-gray-700 transition duration-300 rounded-md">
               {child.label}
