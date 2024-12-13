@@ -83,7 +83,7 @@ export const Navbar = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
-        className="absolute mt-2 w-full shadow-lg rounded-lg py-2 z-20 flex justify-center gap-2 bg-black"
+        className="absolute mt-2 w-full shadow-lg rounded-lg py-2 z-20 flex justify-center gap-0"
       >
         {children.map((child) => (
           <div key={child.label} className="mega-menu-column bg-black px-2 flex-1 rounded-lg">
