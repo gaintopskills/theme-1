@@ -15,9 +15,10 @@ export const StitchingAnimation = () => {
   return (
     <div className="image-container">
       <img
-        src="/1-2b.png" // Assuming the image is placed in the "public" folder
+        src="/1-2c.png" // Assuming the image is placed in the "public" folder
         alt="Fading Image"
         className={`fade-in-image ${isVisible ? "visible" : ""}`}
+        style={{ margin: "0 100px" }} // Added 20px left and right margin
       />
     </div>
   );
