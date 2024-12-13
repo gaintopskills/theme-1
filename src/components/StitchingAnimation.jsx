@@ -15,7 +15,7 @@ export const StitchingAnimation = () => {
   return (
     <div className="image-container">
       <img
-        src="/1-2.png" // Assuming the image is placed in the "public" folder
+        src="/1-2b.png" // Assuming the image is placed in the "public" folder
         alt="Fading Image"
         className={`fade-in-image ${isVisible ? "visible" : ""}`}
       />
