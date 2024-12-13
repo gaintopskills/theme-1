@@ -12,7 +12,7 @@ const navbarLinks = [
     ariaLabel: 'Services',
     children: [
       { label: 'Embroidery', href: '/sub-feature3', ariaLabel: 'Sub-feature 3', image: '/menu3.jpg' },
-      { label: 'Screen Printing', href: '/sub-feature4', ariaLabel: 'Sub-feature 4', image: '/menu2.jpg' },
+      { label: 'Screen Printing', href: '/sub-feature4', ariaLabel: 'Sub-feature 4', image: '/menu5.jpg' },
       { label: 'DTG', href: '/sub-feature5', ariaLabel: 'Sub-feature 5', image: '/menu1.jpg' },
       { label: 'Digital Sublimation', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu4.jpg' },
       { label: 'Heat Transfer', href: '/sub-feature7', ariaLabel: 'Sub-feature 7', image: '/menu2.jpg' },
