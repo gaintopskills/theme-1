@@ -10,7 +10,22 @@ export const Carousel = () => {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const carouselRef = useRef(null);
+    const [isMounted, setIsMounted] = useState(false);
+    const slideInterval = useRef(null);
+
+    useEffect(() => {
+        // Mark component as mounted
+        setIsMounted(true);
+
+        // Auto-slide logic
+        slideInterval.current = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 3000);
+
+        return () => {
+            clearInterval(slideInterval.current);
+        };
+    }, []);
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -20,31 +35,11 @@ export const Carousel = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
     };
 
-    useEffect(() => {
-        const calculateHeight = () => {
-            if (carouselRef.current) {
-                const slides = carouselRef.current.querySelectorAll('.carousel-slide');
-                if (slides.length > 0) {
-                    const width = slides[0].getBoundingClientRect().width;
-                    const height = Math.round(width / (16 / 9));
-                    slides.forEach((slide) => {
-                        slide.style.height = `${height}px`;
-                    });
-                }
-            }
-        };
-
-        calculateHeight();
-        window.addEventListener('resize', calculateHeight);
-
-        return () => {
-            window.removeEventListener('resize', calculateHeight);
-        };
-    }, []);
+    if (!isMounted) return null; // Wait until client-side hydration
 
     return (
-        <div className="relative w-full h-screen bg-gray-100 flex items-center justify-center">
-            <div className="overflow-hidden w-full" ref={carouselRef}>
+        <div className="relative w-full h-screen bg-black flex items-center justify-center">
+            <div className="overflow-hidden w-3/4 h-3/4">
                 <div
                     className="flex transition-transform duration-500"
                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -52,7 +47,7 @@ export const Carousel = () => {
                     {images.map((src, index) => (
                         <div
                             key={index}
-                            className="carousel-slide flex-shrink-0 w-full flex items-center justify-center"
+                            className="flex-shrink-0 w-full h-full flex items-center justify-center"
                         >
                             <img
                                 src={src}
@@ -67,16 +62,29 @@ export const Carousel = () => {
             {/* Navigation Buttons */}
             <button
                 onClick={prevSlide}
-                className="absolute left-4 bg-orange-500 hover:bg-red-700 text-white rounded-full w-12 h-12 flex items-center justify-center"
+                className="absolute left-4 bg-orange-500 hover:bg-red-700 text-white rounded-full w-10 h-10 flex items-center justify-center"
             >
                 &#8592;
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute right-4 bg-orange-500 hover:bg-red-700 text-white rounded-full w-12 h-12 flex items-center justify-center"
+                className="absolute right-4 bg-orange-500 hover:bg-red-700 text-white rounded-full w-10 h-10 flex items-center justify-center"
             >
                 &#8594;
             </button>
+
+            {/* Indicators */}
+            <div className="absolute bottom-4 flex space-x-2">
+                {images.map((_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => setCurrentIndex(index)}
+                        className={`w-3 h-3 rounded-full ${
+                            index === currentIndex ? 'bg-orange-500' : 'bg-gray-400'
+                        }`}
+                    ></button>
+                ))}
+            </div>
         </div>
     );
 };
