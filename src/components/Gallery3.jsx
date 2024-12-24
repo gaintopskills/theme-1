@@ -24,12 +24,11 @@ export const Gallery3 = () => {
   };
 
   return (
-    <div className="relative w-full h-96 flex items-center justify-center bg-black overflow-hidden">
-       
+    <div className="relative w-full h-80 md:h-96 lg:h-[500px] flex items-center justify-center bg-black overflow-hidden">
       {/* Left Arrow */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 z-10"
+        className="absolute left-4 bg-gray-800 text-white p-2 md:p-3 rounded-full shadow-md hover:bg-gray-700 z-10"
       >
         ❮
       </button>
@@ -83,7 +82,7 @@ export const Gallery3 = () => {
               <img
                 src={src}
                 alt={`Image ${index}`}
-                className="w-96 h-64 object-cover rounded-lg shadow-md"
+                className="w-48 h-32 md:w-64 md:h-40 lg:w-[600px] lg:h-[400px] object-cover rounded-lg shadow-md"
               />
             </div>
           );
@@ -93,7 +92,7 @@ export const Gallery3 = () => {
       {/* Right Arrow */}
       <button
         onClick={handleNext}
-        className="absolute right-4 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 z-10"
+        className="absolute right-4 bg-gray-800 text-white p-2 md:p-3 rounded-full shadow-md hover:bg-gray-700 z-10"
       >
         ❯
       </button>
