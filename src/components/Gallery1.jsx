@@ -1,53 +1,70 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
+
+const images = [
+  "https://images.unsplash.com/photo-1566679056462-2075774c8c07?q=80&w=2675&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1494806812796-244fe51b774d?q=80&w=2667&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1670414701148-16ac8873a150?q=80&w=2648&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=2856&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=2748&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1443632864897-14973fa006cf?q=80&w=2670&auto=format&fit=crop",
+];
 
 export const Gallery1 = () => {
-  const galleryRef = useRef(null);
+  const scrollContainerRef = useRef(null);
 
-  const scrollNext = () => {
-    galleryRef.current.scrollBy({
-      left: 300,
-      behavior: "smooth",
-    });
-  };
-
-  const scrollPrev = () => {
-    galleryRef.current.scrollBy({
+  const scrollLeft = () => {
+    scrollContainerRef.current.scrollBy({
       left: -300,
       behavior: "smooth",
     });
   };
 
-  return (
-    <div className="gallery-wrapper">
-      <h1 className="gallery-title">Sample Of Our Work</h1>
-      <div className="gallery-container">
-        <div className="gallery" ref={galleryRef}>
-          <div className="card">
-            <img src="https://picsum.photos/id/1/300/400" alt="Image 1" />
-          </div>
-          <div className="card">
-            <img src="https://picsum.photos/id/2/300/400" alt="Image 2" />
-          </div>
-          <div className="card">
-            <img src="https://picsum.photos/id/3/300/400" alt="Image 3" />
-          </div>
-          <div className="card">
-            <img src="https://picsum.photos/id/4/300/400" alt="Image 4" />
-          </div>
-          <div className="card">
-            <img src="https://picsum.photos/id/5/300/400" alt="Image 5" />
-          </div>
-        </div>
+  const scrollRight = () => {
+    scrollContainerRef.current.scrollBy({
+      left: 300,
+      behavior: "smooth",
+    });
+  };
 
-        <div className="controls">
-          <button onClick={scrollPrev} className="prev-btn">
-            Prev
-          </button>
-          <button onClick={scrollNext} className="next-btn">
-            Next
-          </button>
-        </div>
+  return (
+    <div className="gallery-container relative">
+      {/* Left Arrow */}
+      <button
+        onClick={scrollLeft}
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700 z-10"
+      >
+        ❮
+      </button>
+
+      {/* Image Container */}
+      <div
+        ref={scrollContainerRef}
+        className="flex gap-4 overflow-hidden w-full"
+        style={{ scrollBehavior: "smooth" }}
+      >
+        {images.map((src, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-80 h-56 overflow-hidden rounded-lg shadow-md"
+          >
+            <img
+              src={src}
+              alt={`Image ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
       </div>
+
+      {/* Right Arrow */}
+      <button
+        onClick={scrollRight}
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700 z-10"
+      >
+        ❯
+      </button>
     </div>
   );
 };
+
+export default Gallery1;

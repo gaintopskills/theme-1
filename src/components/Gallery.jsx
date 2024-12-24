@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-export const Carousel = () => {
+export const Gallery = () => {
     const images = [
         "https://images.unsplash.com/photo-1566679056462-2075774c8c07?q=80&w=2675&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "https://images.unsplash.com/photo-1494806812796-244fe51b774d?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -81,4 +81,4 @@ export const Carousel = () => {
     );
 };
 
-export default Carousel;
+export default Gallery;
