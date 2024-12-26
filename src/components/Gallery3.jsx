@@ -9,6 +9,7 @@ const images = [
   "../product6.jpg",
   "../product7.jpg",
   "../product8.jpg",
+  "../product9.jpg",
 ];
 
 export const Gallery3 = () => {
