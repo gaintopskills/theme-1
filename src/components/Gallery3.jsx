@@ -82,7 +82,8 @@ export const Gallery3 = () => {
               <img
                 src={src}
                 alt={`Image ${index}`}
-                className="w-48 h-32 md:w-64 md:h-40 lg:w-[600px] lg:h-[400px] object-cover rounded-lg shadow-md"
+                className="w-32 h-32 md:w-40 md:h-40 lg:w-[400px] lg:h-[400px] object-cover rounded-lg shadow-md"
+
               />
             </div>
           );
