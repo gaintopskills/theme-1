@@ -20,7 +20,7 @@ const navbarLinks = [
       { label: 'Blank Apparel', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu7.jpg' },
     ],
   },
-  { label: 'Galley', href: '/#pricing', ariaLabel: 'Galley' },
+  { label: 'Galley', href: '/custom-embroidery-services', ariaLabel: 'Galley' },
   { label: 'Events', href: '/#feedback', ariaLabel: 'Events' },
   { label: 'Free Quote', href: '/#FAQ', ariaLabel: 'Free Quote' },
   { label: 'Contact Us', href: '/#FAQ', ariaLabel: 'Contact Us' },
