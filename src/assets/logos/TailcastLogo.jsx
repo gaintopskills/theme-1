@@ -1,6 +1,6 @@
 export const TailcastLogo = () => (
   <img
-    src="/e-and-r-logoa.png" // Path to your logo, assuming it's in the "public" folder
+    src="/e-and-r-unlimited-logo.webp" // Path to your logo, assuming it's in the "public" folder
     alt="E & R Unlimited Inc. Logo"
     width="180"
     height="30"
