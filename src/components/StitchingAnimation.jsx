@@ -18,6 +18,11 @@ export const StitchingAnimation = () => {
         src="/e-and-r-unlimited-custom-wholesale-embroidery-services.webp" // Assuming the image is placed in the "public" folder
         alt="Fading Image"
         className={`fade-in-image ${isVisible ? "visible" : ""}`}
+        style={{
+          width: "90vw", // Full width of the viewport
+          height: "90vh", // Full height of the viewport
+        
+        }}
       />
     </div>
   );
