@@ -6,6 +6,10 @@ const logos = [
   { src: '/joes.webp', alt: 'Joes', width: 189, height: 50  },
   { src: '/levis.webp', alt: 'Logo Levis logo', width: 226, height: 50  },
   { src: '/NTWRK.webp', alt: 'NTWRK', width: 299, height: 50  },
+  { src: '/petite-plume.webp', alt: 'NTWRK', width: 702, height: 50  },
+  { src: '/todd-snyder.webp', alt: 'NTWRK', width: 224, height: 50  },
+  { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 650, height: 50  },
+  { src: '/adcolor.webp', alt: 'NTWRK', width: 432, height: 50  },
 ];
 export const Logos = () => {
   return (
