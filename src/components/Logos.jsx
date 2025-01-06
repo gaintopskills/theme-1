@@ -1,11 +1,11 @@
 import React from 'react';
 
 const logos = [
-  { src: '/30-seconds-to-mars.png', alt: 'Logo 1' },
-  { src: '/frame-denim.png', alt: 'Logo 2' },
-  { src: '/joes.png', alt: 'Logo 3' },
-  { src: '/levis.png', alt: 'Logo 4' },
-  { src: '/NTWRK.png', alt: 'Logo 5' },
+  { src: '/30-seconds-to-mars.webp', alt: '30 seconds to mars' },
+  { src: '/frame-denim.webp', alt: 'Logo  Frame Demin' },
+  { src: '/joes.webp', alt: 'Joes' },
+  { src: '/levis.webp', alt: 'Logo Levis logo' },
+  { src: '/NTWRK.webp', alt: 'NTWRK' },
 ];
 
 export const Logos = () => {
