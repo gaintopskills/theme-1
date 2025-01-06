@@ -7,7 +7,6 @@ const logos = [
   { src: '/levis.webp', alt: 'Logo Levis logo', width: 226, height: 50  },
   { src: '/NTWRK.webp', alt: 'NTWRK', width: 299, height: 50  },
 ];
-
 export const Logos = () => {
   return (
     <div className="logo-scroll-container">
