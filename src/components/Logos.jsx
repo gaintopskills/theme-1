@@ -1,11 +1,11 @@
 import React from 'react';
 
 const logos = [
-  { src: '/30-seconds-to-mars.webp', alt: '30 seconds to mars' },
-  { src: '/frame-denim.webp', alt: 'Logo  Frame Demin' },
-  { src: '/joes.webp', alt: 'Joes' },
-  { src: '/levis.webp', alt: 'Logo Levis logo' },
-  { src: '/NTWRK.webp', alt: 'NTWRK' },
+  { src: '/30-seconds-to-mars.webp', alt: '30 seconds to mars', width: 130, height: 50  },
+  { src: '/frame-denim.webp', alt: 'Logo  Frame Demin', width: 447, height: 50  },
+  { src: '/joes.webp', alt: 'Joes', width: 189, height: 50  },
+  { src: '/levis.webp', alt: 'Logo Levis logo', width: 226, height: 50  },
+  { src: '/NTWRK.webp', alt: 'NTWRK', width: 299, height: 50  },
 ];
 
 export const Logos = () => {
@@ -28,10 +28,6 @@ export const Logos = () => {
             src={logo.src}
             alt={logo.alt}
             className="logo-image"
-            style={{
-              height: '50px', // Set consistent height
-              width: 'auto',  // Adjust width to maintain aspect ratio
-            }}
           />
         ))}
       </div>
