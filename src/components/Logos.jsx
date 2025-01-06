@@ -28,6 +28,10 @@ export const Logos = () => {
             src={logo.src}
             alt={logo.alt}
             className="logo-image"
+            style={{
+              height: '50px', // Set consistent height
+              width: 'auto',  // Adjust width to maintain aspect ratio
+            }}
           />
         ))}
       </div>
