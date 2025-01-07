@@ -2,14 +2,14 @@ import React from 'react';
 
 const logos = [
   { src: '/30-seconds-to-mars.webp', alt: '30 seconds to mars', width: 78, height: 30  },
-  { src: '/frame-denim.webp', alt: 'Frame Demin logo', width: 268, height: 30  },
-  { src: '/joes.webp', alt: 'Joes', width: 189, height: 50  },
-  { src: '/levis.webp', alt: 'Logo Levis logo', width: 226, height: 50  },
-  { src: '/NTWRK.webp', alt: 'NTWRK', width: 299, height: 50  },
+  { src: '/frame-denim.webp', alt: 'Frame Demin logo', width: 263, height: 30  },
+  { src: '/joes.webp', alt: 'Joes', width: 130, height: 30  },
+  { src: '/levis.webp', alt: 'Logo Levis logo', width: 226, height: 30  },
+  { src: '/NTWRK.webp', alt: 'NTWRK', width: 299, height: 30  },
   { src: '/petite-plume.webp', alt: 'NTWRK', width: 421, height: 30  },
-  { src: '/todd-snyder.webp', alt: 'NTWRK', width: 224, height: 50  },
-  { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 650, height: 50  },
-  { src: '/adcolor.webp', alt: 'NTWRK', width: 432, height: 50  },
+  { src: '/todd-snyder.webp', alt: 'NTWRK', width: 224, height: 30  },
+  { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 650, height: 30  },
+  { src: '/adcolor.webp', alt: 'NTWRK', width: 432, height: 30  },
 ];
 export const Logos = () => {
   return (
