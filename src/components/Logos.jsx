@@ -16,31 +16,6 @@ const logos = [
   { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 390, height: 30 },
 ];
 
-const styles = {
-  logoScrollContainer: {
-    overflow: 'hidden',
-    position: 'relative',
-    width: '100%',
-    height: '50px',
-  },
-  logoTrack: {
-    display: 'flex',
-    gap: '20px',
-    animation: 'scroll 20s linear infinite',
-  },
-  logoImage: {
-    display: 'inline-block',
-  },
-  '@keyframes scroll': {
-    from: {
-      transform: 'translateX(0)',
-    },
-    to: {
-      transform: 'translateX(-50%)',
-    },
-  },
-};
-
 export const Logos = () => {
   return (
     <div style={styles.logoScrollContainer}>
@@ -58,4 +33,30 @@ export const Logos = () => {
       </div>
     </div>
   );
+};
+
+const styles = {
+  logoScrollContainer: {
+    overflow: 'hidden',
+    position: 'relative',
+    width: '100%',
+    height: '50px',
+  },
+  logoTrack: {
+    display: 'flex',
+    gap: '20px',
+    animation: 'scroll 20s linear infinite',
+    whiteSpace: 'nowrap', // Prevent content wrapping
+  },
+  logoImage: {
+    display: 'inline-block',
+  },
+  '@keyframes scroll': {
+    from: {
+      transform: 'translateX(0)',
+    },
+    to: {
+      transform: 'translateX(-100%)',
+    },
+  },
 };
