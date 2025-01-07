@@ -10,6 +10,7 @@ const logos = [
   { src: '/todd-snyder.webp', alt: 'NTWRK', width: 135, height: 30  },
   { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 390, height: 30  },
   { src: '/adcolor.webp', alt: 'NTWRK', width: 259, height: 30  },
+  { src: '/veronica-beard.webp', alt: '30 seconds to mars', width: 284, height: 30  },
 ];
 export const Logos = () => {
   return (
