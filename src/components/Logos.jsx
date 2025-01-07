@@ -14,6 +14,8 @@ const logos = [
   { src: '/petite-plume.webp', alt: 'NTWRK', width: 421, height: 30 },
   { src: '/todd-snyder.webp', alt: 'NTWRK', width: 135, height: 30 },
   { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 390, height: 30 },
+  { src: '/adidas.webp', alt: 'NTWRK', width: 44, height: 30 },
+  { src: '/hmdo.webp', alt: 'NTWRK', width: 77, height: 30 },
 ];
 
 export const Logos = () => {
