@@ -13,6 +13,7 @@ const logos = [
   { src: '/veronica-beard.webp', alt: '30 seconds to mars', width: 284, height: 30},
   { src: '/crate-and-barrel.webp', alt: '30 seconds to mars', width: 205, height: 30},
   { src: '/tory-burch.webp', alt: '30 seconds to mars', width: 317, height: 30},
+  { src: '/share.webp', alt: '30 seconds to mars', width: 218, height: 30},
 ];
 export const Logos = () => {
   return (
