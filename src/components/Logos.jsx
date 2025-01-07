@@ -21,6 +21,8 @@ export const Logos = () => {
             key={index}
             src={logo.src}
             alt={logo.alt}
+            width={logo.width} // Use dynamic width from the array
+            height={logo.height} // Fixed height of 50px
             className="logo-image"
           />
         ))}
