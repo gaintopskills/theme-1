@@ -1,8 +1,8 @@
 import React from 'react';
 
 const logos = [
-  { src: '/30-seconds-to-mars.webp', alt: '30 seconds to mars', width: 130, height: 50  },
-  { src: '/frame-denim.webp', alt: 'Frame Demin logo', width: 447, height: 50  },
+  { src: '/30-seconds-to-mars.webp', alt: '30 seconds to mars', width: 78, height: 30  },
+  { src: '/frame-denim.webp', alt: 'Frame Demin logo', width: 268, height: 30  },
   { src: '/joes.webp', alt: 'Joes', width: 189, height: 50  },
   { src: '/levis.webp', alt: 'Logo Levis logo', width: 226, height: 50  },
   { src: '/NTWRK.webp', alt: 'NTWRK', width: 299, height: 50  },
