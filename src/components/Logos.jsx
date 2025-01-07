@@ -27,7 +27,7 @@ export const Logos = () => {
     logoTrack: {
       display: 'flex',
       gap: '20px',
-      animation: 'scroll 20s linear infinite',
+      animation: 'scroll 10s linear infinite',
       whiteSpace: 'nowrap',
     },
     logoImage: {
