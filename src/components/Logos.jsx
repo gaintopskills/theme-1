@@ -49,6 +49,7 @@ export const Logos = () => {
             alt={logo.alt}
             width={logo.width}
             height={logo.height}
+            loading="lazy" // Add lazy loading attribute
             style={styles.logoImage}
           />
         ))}
