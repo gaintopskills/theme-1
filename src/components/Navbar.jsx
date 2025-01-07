@@ -15,7 +15,7 @@ const navbarLinks = [
       { label: 'Screen Printing', href: '/sub-feature4', ariaLabel: 'Sub-feature 4', image: '/screen-printing-services.webp' },
       { label: 'DTG', href: '/sub-feature5', ariaLabel: 'Sub-feature 5', image: '/dtg-services.webp' },
       { label: 'Digital Sublimation', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/digital-sublimation.webp' },
-      { label: 'Heat Transfer', href: '/sub-feature7', ariaLabel: 'Sub-feature 7', image: '/menu2.jpg' },
+      { label: 'Heat Transfer', href: '/sub-feature7', ariaLabel: 'Sub-feature 7', image: '/heat-transfer-services.webp' },
       { label: 'Cut & Saw', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu6.jpg' },
       { label: 'Blank Apparel', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu7.jpg' },
     ],
