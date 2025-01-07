@@ -17,6 +17,28 @@ const logos = [
 ];
 
 export const Logos = () => {
+  const styles = {
+    logoScrollContainer: {
+      overflow: 'hidden',
+      position: 'relative',
+      width: '100%',
+      height: '50px',
+    },
+    logoTrack: {
+      display: 'flex',
+      gap: '20px',
+      animation: 'scroll 20s linear infinite',
+      whiteSpace: 'nowrap',
+    },
+    logoImage: {
+      display: 'inline-block',
+    },
+    '@keyframes scroll': {
+      from: { transform: 'translateX(0)' },
+      to: { transform: 'translateX(-100%)' },
+    },
+  };
+
   return (
     <div style={styles.logoScrollContainer}>
       <div style={styles.logoTrack}>
@@ -33,30 +55,4 @@ export const Logos = () => {
       </div>
     </div>
   );
-};
-
-const styles = {
-  logoScrollContainer: {
-    overflow: 'hidden',
-    position: 'relative',
-    width: '100%',
-    height: '50px',
-  },
-  logoTrack: {
-    display: 'flex',
-    gap: '20px',
-    animation: 'scroll 20s linear infinite',
-    whiteSpace: 'nowrap', // Prevent content wrapping
-  },
-  logoImage: {
-    display: 'inline-block',
-  },
-  '@keyframes scroll': {
-    from: {
-      transform: 'translateX(0)',
-    },
-    to: {
-      transform: 'translateX(-100%)',
-    },
-  },
 };
