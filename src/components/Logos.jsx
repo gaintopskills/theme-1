@@ -1,16 +1,18 @@
 import React from 'react';
 
 const logos = [
-  { src: '/30-seconds-to-mars.webp', alt: '30 seconds to mars', width: 78, height: 30  },
-  { src: '/frame-denim.webp', alt: 'Frame Demin logo', width: 263, height: 30  },
-  { src: '/joes.webp', alt: 'Joes', width: 130, height: 30  },
-  { src: '/levis.webp', alt: 'Logo Levis logo', width: 136, height: 30  },
-  { src: '/NTWRK.webp', alt: 'NTWRK', width: 137, height: 30  },
-  { src: '/petite-plume.webp', alt: 'NTWRK', width: 421, height: 30  },
-  { src: '/todd-snyder.webp', alt: 'NTWRK', width: 135, height: 30  },
-  { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 390, height: 30  },
-  { src: '/adcolor.webp', alt: 'NTWRK', width: 259, height: 30  },
-  { src: '/veronica-beard.webp', alt: '30 seconds to mars', width: 284, height: 30  },
+  { src: '/30-seconds-to-mars.webp', alt: '30 seconds to mars', width: 78, height: 30},
+  { src: '/frame-denim.webp', alt: 'Frame Demin logo', width: 263, height: 30},
+  { src: '/joes.webp', alt: 'Joes', width: 130, height: 30},
+  { src: '/levis.webp', alt: 'Logo Levis logo', width: 136, height: 30},
+  { src: '/NTWRK.webp', alt: 'NTWRK', width: 137, height: 30},
+  { src: '/petite-plume.webp', alt: 'NTWRK', width: 421, height: 30},
+  { src: '/todd-snyder.webp', alt: 'NTWRK', width: 135, height: 30},
+  { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 390, height: 30},
+  { src: '/adcolor.webp', alt: 'NTWRK', width: 259, height: 30},
+  { src: '/veronica-beard.webp', alt: '30 seconds to mars', width: 284, height: 30},
+  { src: '/crate-and-barrel.webp', alt: '30 seconds to mars', width: 205, height: 30},
+  { src: '/tory-burch.webp', alt: '30 seconds to mars', width: 317, height: 30},
 ];
 export const Logos = () => {
   return (
