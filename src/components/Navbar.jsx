@@ -88,7 +88,7 @@ export const Navbar = () => {
       >
         {children.map((child) => (
           <div key={child.label} className="mega-menu-column px-2 flex-1 bg-black">
-            <img src={child.image} alt={child.label} className="w-28 h-28 mx-auto mb-1" style={{ width: '100px', height: '120px' }} />
+            <img src={child.image} alt={child.label} className="w-28 h-28 mx-auto mb-1" style={{ width: '100px', height: '120px' }} loading="lazy"/>
             <h3 className="text-white mb-1 text-lg w-28 text-center hover:bg-gray-700 transition duration-300 rounded-md">
               {child.label}
             </h3>
