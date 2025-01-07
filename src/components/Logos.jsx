@@ -8,8 +8,8 @@ const logos = [
   { src: '/NTWRK.webp', alt: 'NTWRK', width: 137, height: 30  },
   { src: '/petite-plume.webp', alt: 'NTWRK', width: 421, height: 30  },
   { src: '/todd-snyder.webp', alt: 'NTWRK', width: 135, height: 30  },
-  { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 650, height: 30  },
-  { src: '/adcolor.webp', alt: 'NTWRK', width: 432, height: 30  },
+  { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 390, height: 30  },
+  { src: '/adcolor.webp', alt: 'NTWRK', width: 259, height: 30  },
 ];
 export const Logos = () => {
   return (
