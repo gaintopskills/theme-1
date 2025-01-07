@@ -11,7 +11,7 @@ const navbarLinks = [
     href: '/#features',
     ariaLabel: 'Services',
     children: [
-      { label: 'Embroidery', href: '/sub-feature3', ariaLabel: 'Sub-feature 3', image: '/menu3.jpg' },
+      { label: 'Embroidery', href: '/sub-feature3', ariaLabel: 'Sub-feature 3', image: '/custom-embroidery-services.webp' },
       { label: 'Screen Printing', href: '/sub-feature4', ariaLabel: 'Sub-feature 4', image: '/menu5.jpg' },
       { label: 'DTG', href: '/sub-feature5', ariaLabel: 'Sub-feature 5', image: '/dtg-services.webp' },
       { label: 'Digital Sublimation', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu4.jpg' },
