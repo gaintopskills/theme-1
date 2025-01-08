@@ -34,7 +34,7 @@ const services = [
     title: "Vinyl Transfers",
     description:
       "Perfect for custom logos, team player names, numbers, or swimwear. Heat transfers ensure durable and high-quality applications.",
-    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/jersey.png",
+    image: "/cut-and-sew.webp",
     link: "https://theprinthq.com.au/vinyl-heat-transfers/",
   },
   {
