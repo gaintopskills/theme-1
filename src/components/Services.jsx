@@ -13,7 +13,7 @@ const services = [
     title: "Embroidery",
     description:
       "High-quality digital embroidery for polo shirts, jackets, caps, workwear, and business shirts. Perfect for personalization and prestige.",
-    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/embroidery.png",
+    image: "/embroidery-services.webp",
     link: "https://theprinthq.com.au/embroidery-services/",
   },
   {
