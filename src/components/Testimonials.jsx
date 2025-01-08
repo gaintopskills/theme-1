@@ -47,6 +47,7 @@ export const Testimonials = () => (
                   alt="Customer avatar"
                   className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full object-cover"
                   aria-label={testimonial.heading}
+                  loading="lazy"
                 />
               </div>
 
