@@ -86,7 +86,7 @@ export const ServicesSection = () => {
               <div className="flex mt-4 space-x-4">
                 <a
                   href={service.link}
-                  className="px-4 py-2 bg-bgDark1 text-white rounded-md hover:bg-gray-500 transition duration-300 inline-block"
+                  className="px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-500 transition duration-300 inline-block"
                 >
                   Learn More
                 </a>
