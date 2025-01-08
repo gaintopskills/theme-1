@@ -20,7 +20,7 @@ const services = [
     title: "Blank Apparel",
     description:
       "Access high-quality blank apparel for printing or embroidery. We partner with the best wholesale brands, offering styles for every need.",
-    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/cap.png",
+    image: "/blank-apparel-provider.webp",
     link: "https://theprinthq.com.au/blank-apparel/",
   },
   {
