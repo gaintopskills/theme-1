@@ -3,13 +3,6 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "DTG - Direct To Garment",
-    description:
-      "Perfect for promotional companies, fashion events, and clothing labels. DTG allows printing vibrant images onto garments with a smooth, light feel.",
-    image: "/direct-to-garment-services.webp",
-    link: "https://theprinthq.com.au/dtg-printing-sydney/",
-  },
-  {
     title: "Embroidery",
     description:
       "High-quality digital embroidery for polo shirts, jackets, caps, workwear, and business shirts. Perfect for personalization and prestige.",
@@ -17,14 +10,21 @@ const services = [
     link: "https://theprinthq.com.au/embroidery-services/",
   },
   {
-    title: "Blank Apparel",
+    title: "Screen Printing",
     description:
-      "Access high-quality blank apparel for printing or embroidery. We partner with the best wholesale brands, offering styles for every need.",
-    image: "/blank-apparel-provider.webp",
-    link: "https://theprinthq.com.au/blank-apparel/",
+      "Cost-effective printing for orders over 25 garments. Experts in color matching and quality to ensure excellent results every time.",
+    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/printing.png",
+    link: "https://theprinthq.com.au/screen-printing-sydney/",
   },
   {
-    title: "DTF - Direct To Film",
+    title: "DTG - Direct To Garment",
+    description:
+      "Perfect for promotional companies, fashion events, and clothing labels. DTG allows printing vibrant images onto garments with a smooth, light feel.",
+    image: "/direct-to-garment-services.webp",
+    link: "https://theprinthq.com.au/dtg-printing-sydney/",
+  },
+  {
+    title: "Digital Sublimation",
     description:
       "High-quality, durable prints for fabrics using DTF. Vibrant, full-color designs perfect for custom apparel and promotional items.",
     image: "https://theprinthq.com.au/wp-content/uploads/2021/03/t-shirt.png",
@@ -38,12 +38,12 @@ const services = [
     link: "https://theprinthq.com.au/vinyl-heat-transfers/",
   },
   {
-    title: "Screen Printing",
+    title: "Blank Apparel",
     description:
-      "Cost-effective printing for orders over 25 garments. Experts in color matching and quality to ensure excellent results every time.",
-    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/printing.png",
-    link: "https://theprinthq.com.au/screen-printing-sydney/",
-  },
+      "Access high-quality blank apparel for printing or embroidery. We partner with the best wholesale brands, offering styles for every need.",
+    image: "/blank-apparel-provider.webp",
+    link: "https://theprinthq.com.au/blank-apparel/",
+  },1
 ];
 
 export const ServicesSection = () => {
