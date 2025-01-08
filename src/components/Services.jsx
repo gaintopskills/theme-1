@@ -27,7 +27,7 @@ const services = [
     title: "Digital Sublimation",
     description:
       "High-quality, durable prints for fabrics using DTF. Vibrant, full-color designs perfect for custom apparel and promotional items.",
-    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/t-shirt.png",
+    image: "/digital-sublimation-services.webp",
     link: "https://theprinthq.com.au/dtf-printing/",
   },
   {
@@ -43,7 +43,7 @@ const services = [
       "Access high-quality blank apparel for printing or embroidery. We partner with the best wholesale brands, offering styles for every need.",
     image: "/blank-apparel-provider.webp",
     link: "https://theprinthq.com.au/blank-apparel/",
-  },1
+  },
 ];
 
 export const ServicesSection = () => {
