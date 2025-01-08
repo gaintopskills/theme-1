@@ -1,90 +1,86 @@
+import React from "react";
 import { motion } from "framer-motion";
 
-import feature5 from "../assets/images/feature5.jpg";
-import feature6 from "../assets/images/feature6.jpg";
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
-import embroidery from "../assets/images/blog3.png";
+const services = [
+  {
+    title: "DTG - Direct To Garment",
+    description:
+      "Perfect for promotional companies, fashion events, and clothing labels. DTG allows printing vibrant images onto garments with a smooth, light feel.",
+    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/tshirt.png",
+    link: "https://theprinthq.com.au/dtg-printing-sydney/",
+  },
+  {
+    title: "Embroidery",
+    description:
+      "High-quality digital embroidery for polo shirts, jackets, caps, workwear, and business shirts. Perfect for personalization and prestige.",
+    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/embroidery.png",
+    link: "https://theprinthq.com.au/embroidery-services/",
+  },
+  {
+    title: "Blank Apparel",
+    description:
+      "Access high-quality blank apparel for printing or embroidery. We partner with the best wholesale brands, offering styles for every need.",
+    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/cap.png",
+    link: "https://theprinthq.com.au/blank-apparel/",
+  },
+  {
+    title: "DTF - Direct To Film",
+    description:
+      "High-quality, durable prints for fabrics using DTF. Vibrant, full-color designs perfect for custom apparel and promotional items.",
+    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/t-shirt.png",
+    link: "https://theprinthq.com.au/dtf-printing/",
+  },
+  {
+    title: "Vinyl Transfers",
+    description:
+      "Perfect for custom logos, team player names, numbers, or swimwear. Heat transfers ensure durable and high-quality applications.",
+    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/jersey.png",
+    link: "https://theprinthq.com.au/vinyl-heat-transfers/",
+  },
+  {
+    title: "Screen Printing",
+    description:
+      "Cost-effective printing for orders over 25 garments. Experts in color matching and quality to ensure excellent results every time.",
+    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/printing.png",
+    link: "https://theprinthq.com.au/screen-printing-sydney/",
+  },
+];
 
-export const Features2 = () => (
-  <section className="w-full bg-black mt-12 sm:mt-24 mb-12 lg:my-20 lg:mb-24 pt-4">
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: 0.2 }}
-    >
-      <div className="flex flex-wrap items-start 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
-        {/* Left Section */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start mb-12 lg:mb-0 lg:pr-8">
-          <div className="w-11/12 sm:w-3/4 mx-auto lg:w-full flex flex-col">
-             
-            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              Embroidery
-            </h2>
+export const ServicesSection = () => {
+  return (
+    <section className="container mx-auto px-4 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      {services.map((service, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.2 }}
+          className="flex items-center space-x-6 p-4 rounded-md bg-gradient-to-r from-gray-800 via-gray-900 to-black hover:from-gray-700 hover:to-gray-800 transform transition duration-300 hover:scale-105 shadow-lg"
+        >
+          <figure className="relative">
             <img
-            src=""
-            alt="Screen Printing Services"
-            className="w-1/3 lg:w-1/4 mr-6 rounded-md"
-          />
-            <p className="mb-12 text-secondaryText leading-loose">
-            We offer high-end embroidery services that combine sophistication and durability and add a high-quality finish to your garments. Perfect for custom apparel, uniforms, promotional products and more. </p>
-
-<p>We create precise, vibrant designs with high-quality finishes using advanced stitching techniques and premium threads. Whether you need a professional logo, intricate design, or personalized text, our embroidery services deliver lasting results on a variety of fabrics.</p>
-
-<p>Elevate your brand with our exceptional embroidery solutions - designed for style and durability.
-            </p>
-            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              Screen Printing
-            </h2>
-            <p className="mb-12 text-secondaryText leading-loose">
-            Elevate your designs with our expert screen printing services, perfect for custom apparel, promotional products, and brand merchandise. Screen printing is ideal for bold, long-lasting designs on t-shirts, hoodies, and other garments.
-
-Our process uses high-quality inks and precise techniques to deliver vibrant, durable prints that stand the test of time. Whether you're outfitting a team, promoting an event, or creating branded clothing, our screen printing ensures professional results on a wide range of fabrics and colors.
-
-            </p>
-            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              Direct To Garment
-            </h2>
-            <p className="mb-12 text-secondaryText leading-loose">
-            Our Direct-to-Garment (DTG) printing services deliver exceptional quality and precision, making them perfect for promotional companies, fashion events, and clothing labels.
-</p>
-<p>Our advanced DTG technology ensures a smooth, high-quality finish, even on dark fabrics. The result? A light, breathable feel that looks and feels amazing.</p>
-            
+              src={service.image}
+              alt={service.title}
+              className="w-24 h-24 rounded-md object-cover"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+              <p className="text-white text-sm">View More</p>
+            </div>
+          </figure>
+          <div>
+            <h3 className="text-lg font-bold text-white hover:text-gray-400 transition-colors">
+              <a href={service.link}>{service.title}</a>
+            </h3>
+            <p className="text-gray-400">{service.description}</p>
+            <a
+              href={service.link}
+              className="mt-3 inline-block px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md shadow hover:bg-blue-500 transition"
+            >
+              Learn More
+            </a>
           </div>
-        </div>
-
-        {/* Right Section */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start">
-          <div className="w-11/12 sm:w-3/4 mx-auto lg:w-full flex flex-col">
-            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              DTG
-            </h2>
-            <p className="mb-12 text-secondaryText leading-loose">
-            Our Direct-to-Garment (DTG) printing services deliver exceptional quality and precision, making them perfect for promotional companies, fashion events, and clothing labels.
-</p>
-<p>Our advanced DTG technology ensures a smooth, high-quality finish, even on dark fabrics. The result? A light, breathable feel that looks and feels amazing.</p>
-            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              Cuts & Saw
-            </h2>
-            <p className="mb-12 text-secondaryText leading-loose">
-            Bring your creative vision to life with our professional cut-and-sew services crafted to match your specifications. Ideal for custom clothing brands, promotional apparel, and one-of-a-kind designs, our services offer complete customization to make your garments truly stand out.</p>
-
-<p>From precise fabric cutting to expert stitching, we craft high-quality, tailored pieces that reflect your unique style and brand identity. Whether you're designing custom t-shirts, hoodies, or complex apparel items, our cut-and-sew services ensure impeccable quality and attention to detail.
-            </p>
-            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-              Blank Apparel
-            </h2>
-            <p className="mb-12 text-secondaryText leading-loose">
-            Explore our high-quality blank apparel, perfect for screen printing, embroidery, DTG printing, and more. Whether you're creating custom designs for a clothing brand, promotional merchandise, or team uniforms, our blank garments provide the ideal canvas for your creativity.</p>
-
-<p>We offer a wide range of styles, including t-shirts, hoodies, polos, and more, in various sizes, colors, and fabrics to suit your needs. Designed for comfort and durability, our blank apparel is the perfect foundation for stunning, customized results.
-
-Start your custom project with our versatile blank apparel—crafted to bring your designs to life.
-
-Contact us today to place your order! </p>
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  </section>
-);
+        </motion.div>
+      ))}
+    </section>
+  );
+};
