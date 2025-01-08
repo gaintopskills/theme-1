@@ -31,7 +31,7 @@ const services = [
     link: "https://theprinthq.com.au/dtf-printing/",
   },
   {
-    title: "Vinyl Transfers",
+    title: "Cut & Sew",
     description:
       "Perfect for custom logos, team player names, numbers, or swimwear. Heat transfers ensure durable and high-quality applications.",
     image: "/cut-and-sew.webp",
