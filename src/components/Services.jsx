@@ -56,7 +56,7 @@ export const ServicesSection = () => {
           whileInView={{ opacity: 1 }} // Fade in when in view
           viewport={{ once: true, amount: 0.2 }} // Trigger once when 20% in view
           transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered animations
-          className="flex flex-col md:flex-row items-center md:items-start space-x-0 md:space-x-6 p-4 rounded-md bg-gray-900 transition duration-300 hover:bg-gray-800 hover:shadow-lg transform overflow-hidden"
+          className="flex flex-col md:flex-row items-center md:items-start space-x-0 md:space-x-6 p-4 rounded-md transition duration-300 hover:bg-gray-800 hover:shadow-lg transform overflow-hidden"
         >
           <figure className="flex-shrink-0 overflow-hidden rounded-md mb-4 md:mb-0">
             <a href={service.link}>
