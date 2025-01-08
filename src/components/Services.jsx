@@ -13,7 +13,7 @@ const services = [
     title: "Screen Printing",
     description:
       "Cost-effective printing for orders over 25 garments. Experts in color matching and quality to ensure excellent results every time.",
-    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/printing.png",
+    image: "/bulk-screen-printing-services.webp",
     link: "https://theprinthq.com.au/screen-printing-sydney/",
   },
   {
