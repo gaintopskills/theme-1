@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -49,11 +50,15 @@ export const ServicesSection = () => {
   return (
     <section className="container mx-auto px-4 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
       {services.map((service, index) => (
-        <div
+        <motion.div
           key={index}
-          className="flex items-center space-x-6 p-4 rounded-md bg-gray-900 transition duration-300 hover:bg-gray-800 hover:shadow-lg hover:scale-105 transform"
+          initial={{ opacity: 0 }} // Start with opacity 0
+          whileInView={{ opacity: 1 }} // Fade in when in view
+          viewport={{ once: true, amount: 0.2 }} // Trigger once when 20% in view
+          transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered animations
+          className="flex flex-col md:flex-row items-center md:items-start space-x-0 md:space-x-6 p-4 rounded-md bg-gray-900 transition duration-300 hover:bg-gray-800 hover:shadow-lg hover:scale-105 transform"
         >
-          <figure className="flex-shrink-0 overflow-hidden rounded-md">
+          <figure className="flex-shrink-0 overflow-hidden rounded-md mb-4 md:mb-0">
             <a href={service.link}>
               <img
                 src={service.image}
@@ -62,13 +67,19 @@ export const ServicesSection = () => {
               />
             </a>
           </figure>
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-lg font-bold text-white hover:text-gray-400 transition-colors">
               <a href={service.link}>{service.title}</a>
             </h3>
             <p className="text-gray-400">{service.description}</p>
+            <a
+              href={service.link}
+              className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500 transition duration-300"
+            >
+              Learn More
+            </a>
           </div>
-        </div>
+        </motion.div>
       ))}
     </section>
   );
