@@ -48,7 +48,7 @@ const services = [
 
 export const ServicesSection = () => {
   return (
-    <section className="container mx-auto px-4 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <section className="container mx-auto px-4 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-8 overflow-hidden">
       {services.map((service, index) => (
         <motion.div
           key={index}
@@ -56,14 +56,14 @@ export const ServicesSection = () => {
           whileInView={{ opacity: 1 }} // Fade in when in view
           viewport={{ once: true, amount: 0.2 }} // Trigger once when 20% in view
           transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered animations
-          className="flex flex-col md:flex-row items-center md:items-start space-x-0 md:space-x-6 p-4 rounded-md bg-gray-900 transition duration-300 hover:bg-gray-800 hover:shadow-lg hover:scale-105 transform"
+          className="flex flex-col md:flex-row items-center md:items-start space-x-0 md:space-x-6 p-4 rounded-md bg-gray-900 transition duration-300 hover:bg-gray-800 hover:shadow-lg transform overflow-hidden"
         >
           <figure className="flex-shrink-0 overflow-hidden rounded-md mb-4 md:mb-0">
             <a href={service.link}>
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-24 h-24 object-cover transition duration-300 transform hover:scale-110"
+                className="w-24 h-24 object-cover mx-auto transition duration-300 transform hover:scale-105"
               />
             </a>
           </figure>
