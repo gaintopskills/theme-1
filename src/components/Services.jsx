@@ -6,7 +6,7 @@ const services = [
     title: "DTG - Direct To Garment",
     description:
       "Perfect for promotional companies, fashion events, and clothing labels. DTG allows printing vibrant images onto garments with a smooth, light feel.",
-    image: "https://theprinthq.com.au/wp-content/uploads/2021/03/tshirt.png",
+    image: "/direct-to-garment-services.webp",
     link: "https://theprinthq.com.au/dtg-printing-sydney/",
   },
   {
