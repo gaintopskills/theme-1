@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const services = [
   {
@@ -50,36 +49,26 @@ export const ServicesSection = () => {
   return (
     <section className="container mx-auto px-4 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
       {services.map((service, index) => (
-        <motion.div
+        <div
           key={index}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: index * 0.2 }}
-          className="flex items-center space-x-6 p-4 rounded-md bg-gradient-to-r from-gray-800 via-gray-900 to-black hover:from-gray-700 hover:to-gray-800 transform transition duration-300 hover:scale-105 shadow-lg"
+          className="flex items-center space-x-6 p-4 rounded-md bg-gray-900 transition duration-300 hover:bg-gray-800 hover:shadow-lg hover:scale-105 transform"
         >
-          <figure className="relative">
-            <img
-              src={service.image}
-              alt={service.title}
-              className="w-24 h-24 rounded-md object-cover"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
-              <p className="text-white text-sm">View More</p>
-            </div>
+          <figure className="flex-shrink-0 overflow-hidden rounded-md">
+            <a href={service.link}>
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-24 h-24 object-cover transition duration-300 transform hover:scale-110"
+              />
+            </a>
           </figure>
           <div>
             <h3 className="text-lg font-bold text-white hover:text-gray-400 transition-colors">
               <a href={service.link}>{service.title}</a>
             </h3>
             <p className="text-gray-400">{service.description}</p>
-            <a
-              href={service.link}
-              className="mt-3 inline-block px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md shadow hover:bg-blue-500 transition"
-            >
-              Learn More
-            </a>
           </div>
-        </motion.div>
+        </div>
       ))}
     </section>
   );
