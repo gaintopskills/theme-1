@@ -11,6 +11,7 @@ const images = [
   "../slider/deni-jacket-embroidery-los-angeles.webp",
   "../slider/custom-embroidery-patches-los-angeles.webp",
 ];
+
 export const Gallery3 = () => {
   const [currentIndex, setCurrentIndex] = useState(3); // Start with the middle image
 
@@ -25,7 +26,10 @@ export const Gallery3 = () => {
   };
 
   return (
-    <div style={{ marginBottom: "100px" }} className="relative w-full h-80 md:h-96 lg:h-[500px] flex items-center justify-center bg-black overflow-hidden">
+    <div
+      style={{ marginBottom: "100px" }}
+      className="relative w-full h-80 md:h-96 lg:h-[500px] flex flex-col items-center justify-center bg-black overflow-hidden"
+    >
       {/* Left Arrow */}
       <button
         onClick={handlePrev}
@@ -35,7 +39,7 @@ export const Gallery3 = () => {
       </button>
 
       {/* Images */}
-      <div className="relative flex items-center justify-center w-full h-full">
+      <div className="relative flex flex-col items-center justify-center w-full h-full">
         {images.map((src, index) => {
           // Calculate relative position to the currentIndex
           const relativeIndex =
@@ -73,7 +77,7 @@ export const Gallery3 = () => {
           return (
             <div
               key={index}
-              className="absolute transition-all duration-500 ease-in-out"
+              className="absolute transition-all duration-500 ease-in-out flex flex-col items-center"
               style={{
                 transform: `${translateX} scale(${scale})`,
                 zIndex: zIndex,
@@ -84,9 +88,11 @@ export const Gallery3 = () => {
                 src={src}
                 alt={`Image ${index}`}
                 loading="lazy"
-                className="w-32 h-32 md:w-40 md:h-40 lg:w-[400px] lg:h-[400px] object-cover rounded-lg shadow-md"
-
+                className="w-32 h-32 md:w-40 md:h-40 lg:w-[400px] lg:h-[400px] object-cover rounded-lg shadow-md mb-4"
               />
+              <h3 className="text-white text-center text-lg">
+                Image {index + 1}
+              </h3>
             </div>
           );
         })}
