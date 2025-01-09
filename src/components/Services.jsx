@@ -54,7 +54,8 @@ export const ServicesSection = () => {
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
         rel="stylesheet"
       />
-      <section className="container mx-auto px-4 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-8"><h2>Services</h2>
+      <h2>Services</h2>
+      <section className="container mx-auto px-4 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
         {services.map((service, index) => (
           <motion.div
             key={index}
