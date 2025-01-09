@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 
 const images = [
-  "../product1.jpg",
-  "../product2.jpg",
-  "../product3.jpg",
-  "../product4.jpg",
-  "../product5.jpg",
-  "../product6.jpg",
-  "../product7.jpg",
-  "../product8.jpg",
-  "../product9.jpg",
+  "../slider/bulk-embroidery-services-los-angeles.webp",
+  "../slider/wholesale-embroidery-los-angeles.webp",
+  "../slider/custom-fashion-embroidey-services-los-angeles.webp",
+  "../slider/bulk-embroidery-services-los-angeles.webp",
+  "../slider/high-end-embroidery-los-angeles.webp",
+  "../slider/high-volume-embroidery-los-angeles.webp",
+  "../slider/high-end-screen-printing-los-angeles.webp",
+  "../slider/deni-jacket-embroidery-los-angeles.webp",
+  "../slider/custom-embroidery-patches-los-angeles.webp",
 ];
-
 export const Gallery3 = () => {
   const [currentIndex, setCurrentIndex] = useState(3); // Start with the middle image
 
@@ -84,6 +83,7 @@ export const Gallery3 = () => {
               <img
                 src={src}
                 alt={`Image ${index}`}
+                loading="lazy"
                 className="w-32 h-32 md:w-40 md:h-40 lg:w-[400px] lg:h-[400px] object-cover rounded-lg shadow-md"
 
               />

@@ -6,42 +6,42 @@ const services = [
     title: "Embroidery",
     description:
       "High-quality digital embroidery for polo shirts, jackets, caps, workwear, and business shirts. Perfect for personalization and prestige.",
-    image: "/embroidery-services.webp",
+    image: "/icons/embroidery-services.webp",
     link: "https://theprinthq.com.au/embroidery-services/",
   },
   {
     title: "Screen Printing",
     description:
       "Cost-effective printing for orders over 25 garments. Experts in color matching and quality to ensure excellent results every time.",
-    image: "/bulk-screen-printing-services.webp",
+    image: "/icons/bulk-screen-printing-services.webp",
     link: "https://theprinthq.com.au/screen-printing-sydney/",
   },
   {
     title: "DTG - Direct To Garment",
     description:
       "Perfect for promotional companies, fashion events, and clothing labels. DTG allows printing vibrant images onto garments with a smooth, light feel.",
-    image: "/direct-to-garment-services.webp",
+    image: "/icons/direct-to-garment-services.webp",
     link: "https://theprinthq.com.au/dtg-printing-sydney/",
   },
   {
     title: "Digital Sublimation",
     description:
       "High-quality, durable prints for fabrics using DTF. Vibrant, full-color designs perfect for custom apparel and promotional items.",
-    image: "/digital-sublimation-services.webp",
+    image: "/icons/digital-sublimation-services.webp",
     link: "https://theprinthq.com.au/dtf-printing/",
   },
   {
     title: "Cut & Sew",
     description:
       "Perfect for custom logos, team player names, numbers, or swimwear. Heat transfers ensure durable and high-quality applications.",
-    image: "/cut-and-sew.webp",
+    image: "/icons/cut-and-sew.webp",
     link: "https://theprinthq.com.au/vinyl-heat-transfers/",
   },
   {
     title: "Blank Apparel",
     description:
       "Access high-quality blank apparel for printing or embroidery. We partner with the best wholesale brands, offering styles for every need.",
-    image: "/blank-apparel-provider.webp",
+    image: "/icons/blank-apparel-provider.webp",
     link: "https://theprinthq.com.au/blank-apparel/",
   },
 ];

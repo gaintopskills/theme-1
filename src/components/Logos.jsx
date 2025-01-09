@@ -1,21 +1,21 @@
 import React from 'react';
 
 const logos = [
-  { src: '/adcolor.webp', alt: 'NTWRK', width: 259, height: 30 },
-  { src: '/veronica-beard.webp', alt: '30 seconds to mars', width: 284, height: 30 },
-  { src: '/crate-and-barrel.webp', alt: '30 seconds to mars', width: 205, height: 30 },
-  { src: '/tory-burch.webp', alt: '30 seconds to mars', width: 317, height: 30 },
-  { src: '/share.webp', alt: '30 seconds to mars', width: 218, height: 30 },
-  { src: '/30-seconds-to-mars.webp', alt: '30 seconds to mars', width: 78, height: 30 },
-  { src: '/frame-denim.webp', alt: 'Frame Demin logo', width: 263, height: 30 },
-  { src: '/joes.webp', alt: 'Joes', width: 130, height: 30 },
-  { src: '/levis.webp', alt: 'Logo Levis logo', width: 136, height: 30 },
-  { src: '/NTWRK.webp', alt: 'NTWRK', width: 137, height: 30 },
-  { src: '/petite-plume.webp', alt: 'NTWRK', width: 421, height: 30 },
-  { src: '/todd-snyder.webp', alt: 'NTWRK', width: 135, height: 30 },
-  { src: '/ralph-lauren.webp', alt: 'NTWRK', width: 390, height: 30 },
-  { src: '/adidas.webp', alt: 'NTWRK', width: 44, height: 30 },
-  { src: '/hmdo.webp', alt: 'NTWRK', width: 77, height: 30 },
+  { src: '/brands/adcolor.webp', alt: 'NTWRK', width: 259, height: 30 },
+  { src: '/brands/veronica-beard.webp', alt: '30 seconds to mars', width: 284, height: 30 },
+  { src: '/brands/crate-and-barrel.webp', alt: '30 seconds to mars', width: 205, height: 30 },
+  { src: '/brands/tory-burch.webp', alt: '30 seconds to mars', width: 317, height: 30 },
+  { src: '/brands/share.webp', alt: '30 seconds to mars', width: 218, height: 30 },
+  { src: '/brands/30-seconds-to-mars.webp', alt: '30 seconds to mars', width: 78, height: 30 },
+  { src: '/brands/frame-denim.webp', alt: 'Frame Demin logo', width: 263, height: 30 },
+  { src: '/brands/joes.webp', alt: 'Joes', width: 130, height: 30 },
+  { src: '/brands/levis.webp', alt: 'Logo Levis logo', width: 136, height: 30 },
+  { src: '/brands/NTWRK.webp', alt: 'NTWRK', width: 137, height: 30 },
+  { src: '/brands/petite-plume.webp', alt: 'NTWRK', width: 421, height: 30 },
+  { src: '/brands/todd-snyder.webp', alt: 'NTWRK', width: 135, height: 30 },
+  { src: '/brands/ralph-lauren.webp', alt: 'NTWRK', width: 390, height: 30 },
+  { src: '/brands/adidas.webp', alt: 'NTWRK', width: 44, height: 30 },
+  { src: '/brands/hmdo.webp', alt: 'NTWRK', width: 77, height: 30 },
 ];
 
 export const Logos = () => {
