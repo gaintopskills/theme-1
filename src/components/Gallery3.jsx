@@ -117,7 +117,6 @@ export const Gallery3 = () => {
           );
         })}
       </div>
-
       {/* Right Arrow */}
       <button
         onClick={handleNext}
