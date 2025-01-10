@@ -12,6 +12,19 @@ const images = [
   "../slider/custom-embroidery-patches-los-angeles.webp",
 ];
 
+// Custom captions corresponding to the images
+const captions = [
+  "Bulk Embroidery Services in Los Angeles",
+  "Wholesale Embroidery in Los Angeles",
+  "Custom Fashion Embroidery Services",
+  "Bulk Embroidery Services Again",
+  "High-End Embroidery for Custom Designs",
+  "High-Volume Embroidery in Los Angeles",
+  "Luxury Screen Printing in Los Angeles",
+  "Denim Jacket Embroidery Services",
+  "Custom Embroidery Patches in LA",
+];
+
 export const Gallery3 = () => {
   const [currentIndex, setCurrentIndex] = useState(3); // Start with the middle image
 
@@ -27,7 +40,7 @@ export const Gallery3 = () => {
 
   return (
     <div
-      style={{ marginBottom: "50px", paddingBottom: "40px"}}
+      style={{ marginBottom: "50px", paddingBottom: "40px" }}
       className="relative w-full h-80 md:h-96 lg:h-[500px] flex flex-col items-center justify-center bg-black overflow-hidden"
     >
       {/* Left Arrow */}
@@ -86,13 +99,14 @@ export const Gallery3 = () => {
             >
               <img
                 src={src}
-                alt={`Image ${index}`}
+                alt={captions[index]} // Use custom captions for accessibility
                 loading="lazy"
                 className="w-32 h-32 md:w-40 md:h-40 lg:w-[400px] lg:h-[400px] object-cover rounded-lg shadow-md mb-4"
               />
-              <h3 className="text-white text-center text-lg">
-                Image {index + 1}
-              </h3>
+              {/* Custom Caption */}
+              <div className="bg-gray-800 text-white text-sm md:text-lg p-2 rounded-lg shadow-md">
+                {captions[index]}
+              </div>
             </div>
           );
         })}
