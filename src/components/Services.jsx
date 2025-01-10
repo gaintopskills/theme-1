@@ -48,8 +48,8 @@ const services = [
 
 export const ServicesSection = () => {
   return (
+  
     <section className="container mx-auto px-4 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
-     <h2>Services</h2>
      {services.map((service, index) => (
         <motion.div
           key={index}
