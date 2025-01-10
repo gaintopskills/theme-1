@@ -14,7 +14,7 @@ const images = [
 
 // Custom captions corresponding to the images
 const captions = [
-  "Bulk Embroidery <br>Services in Los Angeles",
+  "Bulk Embroidery Services in Los Angeles",
   "Wholesale Embroidery in Los Angeles",
   "Custom Fashion Embroidery Services",
   "Bulk Embroidery Services Again",
