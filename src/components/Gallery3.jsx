@@ -40,7 +40,10 @@ export const Gallery3 = () => {
 
   return (
     <div
-      style={{ marginBottom: "50px", paddingBottom: "40px" }}
+      style={{ marginBottom: "50px",
+      paddingBottom: "40px",
+      paddingTop: "20px",
+      paddingTop: "110px",}}
       className="relative w-full h-80 md:h-96 lg:h-[500px] flex flex-col items-center justify-center bg-black overflow-hidden"
     >
       {/* Left Arrow */}
