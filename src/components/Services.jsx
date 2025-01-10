@@ -64,6 +64,7 @@ export const ServicesSection = () => {
               <img
                 src={service.image}
                 alt={service.title}
+                loading="lazy"
                 className="w-24 h-24 object-cover mx-auto transition duration-300 transform hover:scale-110"
               />
             </a>
@@ -76,13 +77,13 @@ export const ServicesSection = () => {
             <div className="flex flex-wrap justify-center mt-4 space-x-4">
               <a
                 href={service.link}
-                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500 transition duration-300"
+                className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-500 transition duration-300"
               >
                 Learn More
               </a>
               <a
                 href="#quote"
-                className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-500 transition duration-300"
+                className="px-4 py-2 bg-red-800 text-white rounded-md hover:bg-red-700 transition duration-300"
               >
                 Request a Quote
               </a>
