@@ -5,18 +5,35 @@ import { TwitterIcon } from "../assets/icons/TwitterIcon";
 
 const footerData = [
   {
-    title: "Services",
-    items: ["Embroidery", "Screen Printing", "DTG", "Digital Sublimation", "Heat Transfer", "Cut & Sew", "Blank Apparel",],
+    title: "Where to Find Us",
+    items: [
+     
+      {
+        type: "map",
+        content: (
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.408420352062!2d-118.23258982341378!3d34.00772592317397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c8954d3aac83%3A0xabb842d065790870!2sE%26R%20Unlimited%20Embroidery!5e0!3m2!1sen!2sus!4v1736545461770!5m2!1sen!2sus"
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        ),
+      },
+    ],
   },
   {
-    title: "Important Links",
+    title: "Services",
     items: [
-      "Organization Team",
-      "Our Journeys",
-      "Pricing Plans",
-      "Roadmap",
-      "Terms & Conditions",
-      "Privacy Policy",
+      "Embroidery",
+      "Screen Printing",
+      "DTG",
+      "Digital Sublimation",
+      "Heat Transfer",
+      "Cut & Sew",
+      "Blank Apparel",
     ],
   },
   {
@@ -36,8 +53,7 @@ export const Footer = () => {
                 <div className="text-white mr-2 text-6xl">
                   <TailcastLogo />
                 </div>
-                <div className="text-white font-['Inter'] font-bold text-xl">
-                </div>
+                <div className="text-white font-['Inter'] font-bold text-xl"></div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
                 Dashboard images were made using free Dark Admin dashboard that
@@ -78,25 +94,34 @@ export const Footer = () => {
             <div className="w-full lg:w-2/3 lg:pl-16 hidden lg:flex flex-wrap justify-between">
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-primaryText">
-                  Services
+                  Where to find us
                 </h3>
                 <ul>
-                  {footerData[0].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
-                      <a
-                        className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))}
+                  {footerData[0].items.map((item, index) => {
+                    if (typeof item === "object" && item.type === "map") {
+                      return (
+                        <li key={`map-${index}`} className="mt-6">
+                          {item.content}
+                        </li>
+                      );
+                    }
+                    return (
+                      <li key={`link-${index}`} className="mb-4">
+                        <a
+                          className="text-gray-400 hover:text-gray-300"
+                          href="#"
+                          aria-label={item}
+                        >
+                          {item}
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-primaryText">
-                  Important Links
+                  Services
                 </h3>
                 <ul>
                   {footerData[1].items.map((item, index) => (
@@ -134,8 +159,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Oversized "E & R Unlimited" Text */}
     </footer>
   );
 };
