@@ -3,13 +3,6 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "DTG - Direct To Garment",
-    description:
-      "Perfect for promotional companies, fashion events, and clothing labels. DTG allows printing vibrant images onto garments with a smooth, light feel.",
-    image: "/icons/direct-to-garment-services.webp",
-    link: "https://theprinthq.com.au/dtg-printing-sydney/",
-  },
-  {
     title: "Embroidery",
     description:
       "High-quality digital embroidery for polo shirts, jackets, caps, workwear, and business shirts. Perfect for personalization and prestige.",
@@ -17,11 +10,18 @@ const services = [
     link: "https://theprinthq.com.au/embroidery-services/",
   },
   {
-    title: "Blank Apparel",
+    title: "Screen Printing",
     description:
-      "Access high-quality blank apparel for printing or embroidery. We partner with the best wholesale brands, offering styles for every need.",
-    image: "/icons/blank-apparel-provider.webp",
-    link: "https://theprinthq.com.au/blank-apparel/",
+      "Cost-effective printing for orders over 25 garments. Experts in color matching and quality to ensure excellent results every time.",
+    image: "/icons/bulk-screen-printing-services.webp",
+    link: "https://theprinthq.com.au/screen-printing-sydney/",
+  },
+  {
+    title: "DTG - Direct To Garment",
+    description:
+      "Perfect for promotional companies, fashion events, and clothing labels. DTG allows printing vibrant images onto garments with a smooth, light feel.",
+    image: "/icons/direct-to-garment-services.webp",
+    link: "https://theprinthq.com.au/dtg-printing-sydney/",
   },
   {
     title: "Digital Sublimation",
@@ -38,17 +38,15 @@ const services = [
     link: "https://theprinthq.com.au/vinyl-heat-transfers/",
   },
   {
-    title: "Screen Printing",
+    title: "Blank Apparel",
     description:
-      "Cost-effective printing for orders over 25 garments. Experts in color matching and quality to ensure excellent results every time.",
-    image: "/icons/bulk-screen-printing-services.webp",
-    link: "https://theprinthq.com.au/screen-printing-sydney/",
+      "Access high-quality blank apparel for printing or embroidery. We partner with the best wholesale brands, offering styles for every need.",
+    image: "/icons/blank-apparel-provider.webp",
+    link: "https://theprinthq.com.au/blank-apparel/",
   },
 ];
-
 export const ServicesSection = () => {
   return (
-  
     <section className="container mx-auto px-4 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
      {services.map((service, index) => (
         <motion.div
