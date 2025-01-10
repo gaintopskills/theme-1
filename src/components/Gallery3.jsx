@@ -14,7 +14,7 @@ const images = [
 
 // Custom captions corresponding to the images
 const captions = [
-  "Bulk Embroidery Services in Los Angeles",
+  "Bulk Embroidery <br>Services in Los Angeles",
   "Wholesale Embroidery in Los Angeles",
   "Custom Fashion Embroidery Services",
   "Bulk Embroidery Services Again",
@@ -104,9 +104,12 @@ export const Gallery3 = () => {
                 className="w-32 h-32 md:w-40 md:h-40 lg:w-[400px] lg:h-[400px] object-cover rounded-lg shadow-md mb-4"
               />
               {/* Custom Caption */}
-              <div className="bg-gray-800 text-white text-sm md:text-lg p-2 rounded-lg shadow-md">
-                {captions[index]}
-              </div>
+              {relativeIndex === 0 && ( // Only display caption for the middle image
+                <div
+                  className="bg-gray-800 text-white text-sm md:text-lg p-2 rounded-lg shadow-md"
+                  dangerouslySetInnerHTML={{ __html: captions[index] }} // Allow HTML captions
+                ></div>
+              )}
             </div>
           );
         })}
