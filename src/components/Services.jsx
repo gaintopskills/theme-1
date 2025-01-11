@@ -27,7 +27,8 @@ const services = [
     title: "Digital Sublimation",
     description:
       "We utilize state-of-the-art Mimaki and Italian Monti Antonio machines to deliver top-quality digital sublimation services. All production is done in-house, ensuring exceptional results with speed and precision!",
-    link: "https://theprinthq.com.au/dtf-printing/",
+      image: "/icons/digital-sublimation-services.webp",
+      link: "https://theprinthq.com.au/dtf-printing/",
   },
   {
     title: "Cut and Sew",
