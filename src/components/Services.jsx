@@ -5,42 +5,41 @@ const services = [
   {
     title: "Embroidery",
     description:
-      "High-quality embroidery applications for polo shirts, jackets, caps, workwear, and business shirts.",
+      "We offer high-quality embroidery from custom patches to intricate applications for polo shirts, jackets, caps, workwear, and business shirts.",
     image: "/icons/embroidery-services.webp",
     link: "https://theprinthq.com.au/embroidery-services/",
   },
   {
     title: "Screen Printing",
     description:
-      "Cost-effective printing for orders over 25 garments. Experts in color matching and quality to ensure excellent results every time.",
+      "We deliver best and competative screen printing products. We are always in the process of collaborating between our sales team and clients to acieve the best color matching and quality ensuring excellent results every time.",
     image: "/icons/bulk-screen-printing-services.webp",
     link: "https://theprinthq.com.au/screen-printing-sydney/",
   },
   {
     title: "DTG - Direct To Garment",
     description:
-      "Perfect for promotional companies, fashion events, and clothing labels. DTG allows printing vibrant images onto garments with a smooth, light feel.",
+      "We specialize in delivering high-quality DTG (Direct To Garment) printing, offering vibrant and durable designs with a smooth finish. Perfect for promotional products, fashion events, or custom clothing lines, we ensure exceptional detail and color accuracy on every garment.",
     image: "/icons/direct-to-garment-services.webp",
     link: "https://theprinthq.com.au/dtg-printing-sydney/",
   },
   {
     title: "Digital Sublimation",
     description:
-      "High-quality, durable prints for fabrics using DTF. Vibrant, full-color designs perfect for custom apparel and promotional items.",
-    image: "/icons/digital-sublimation-services.webp",
+      "We utilize state-of-the-art Mimaki and Italian Monti Antonio machines to deliver top-quality digital sublimation services. All production is done in-house, ensuring exceptional results with speed and precision!",
     link: "https://theprinthq.com.au/dtf-printing/",
   },
   {
     title: "Cut and Sew",
     description:
-      "Perfect for custom logos, team player names, numbers, or swimwear. Heat transfers ensure durable and high-quality applications.",
+      "Our Cut and Sew services provide complete customization, from pattern creation to finished products. Whether it's unique apparel, uniforms, or tailored designs, we ensure precision, quality, and attention to detail in every stitch.",
     image: "/icons/cut-and-sew.webp",
     link: "https://theprinthq.com.au/vinyl-heat-transfers/",
   },
   {
     title: "Blank Apparel",
     description:
-      "Access high-quality blank apparel for printing or embroidery. We partner with the best wholesale brands, offering styles for every need.",
+      "Our Blank Apparel services offer a wide range of high-quality, versatile garments ready for customization. From t-shirts to hoodies, we partner with top wholesale brands to provide styles and fabrics that meet your printing, embroidery, or branding needs.",
     image: "/icons/blank-apparel-provider.webp",
     link: "https://theprinthq.com.au/blank-apparel/",
   },
