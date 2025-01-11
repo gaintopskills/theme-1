@@ -52,12 +52,12 @@ export const Testimonials = () => (
               </div>
 
               {/* Render dynamic heading */}
-              <h1 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-4">
+              <h2 className="text-white text-lg sm:text-xl md:text-base font-bold mb-3 md:mb-4">
                 {testimonial.heading}
-              </h1>
+              </h2>
 
               {/* Center content */}
-              <p className="text-gray-300 text-lg md:text-base leading-relaxed px-2 sm:px-4">
+              <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed px-2 sm:px-4">
                 {testimonial.content}
               </p>
             </div>
