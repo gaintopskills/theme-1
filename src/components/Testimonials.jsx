@@ -57,7 +57,7 @@ export const Testimonials = () => (
               </h1>
 
               {/* Center content */}
-              <p className="text-gray-300 text-sm sm:text-base leading-relaxed px-2 sm:px-4">
+              <p className="text-gray-300 text-lg md:text-base leading-relaxed px-2 sm:px-4">
                 {testimonial.content}
               </p>
             </div>
