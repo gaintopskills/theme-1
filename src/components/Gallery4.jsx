@@ -14,6 +14,12 @@ export const Gallery4 = () => {
 
     const images = [
         { src: "/embroidery/custom-embroidery-los-angeles.webp", album: "Embroidery" },
+        { src: "/embroidery/custom-hat-embroidery.webp", album: "Embroidery" },
+        { src: "/embroidery/custom-bomber-jacket-embroidery.webp", album: "Embroidery" },
+        { src: "/embroidery/high-volume-embroidery.webp", album: "Embroidery" },
+        { src: "/embroidery/custom-towel-embroidery.webp", album: "Embroidery" },
+        { src: "/embroidery/wholesale-custom-hat-embroidery.webp", album: "Embroidery" },
+        { src: "/embroidery/high-volume-custom-hat-embroidery..webp", album: "Embroidery" },
         { src: "https://www.eandrunlimited.com/wp-content/uploads/2022/03/custom-promotional-products-los-angeles.jpg", album: "Patches" },
         { src: "https://www.eandrunlimited.com/wp-content/uploads/2016/09/8e9737839470c7354a95b1a862393874-product-safety-noms-1.jpg", album: "Sublimation" },
         { src: "https://www.eandrunlimited.com/wp-content/uploads/2022/03/custom-photographic-embroidery-los-angeles.jpg", album: "Photographic Embroidery" },
