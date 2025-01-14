@@ -1,11 +1,11 @@
 import React from 'react';
 
 const logos = [
-  { src: '/brands/adcolor.webp', alt: 'NTWRK', width: 259, height: 30 },
+  { src: '/brands/adcolor.webp', alt: 'NTWRK', width: 173, height: 20 },
   { src: '/brands/veronica-beard.webp', alt: '30 seconds to mars', width: 284, height: 30 },
   { src: '/brands/crate-and-barrel.webp', alt: '30 seconds to mars', width: 205, height: 30 },
   { src: '/brands/tory-burch.webp', alt: '30 seconds to mars', width: 317, height: 30 },
-  { src: '/brands/share.webp', alt: '30 seconds to mars', width: 218, height: 30 },
+  { src: '/brands/share.webp', alt: '30 seconds to mars', width: 52, height: 20 },
   { src: '/brands/30-seconds-to-mars.webp', alt: '30 seconds to mars', width: 78, height: 30 },
   { src: '/brands/frame-denim.webp', alt: 'Frame Demin logo', width: 263, height: 30 },
   { src: '/brands/joes.webp', alt: 'Joes', width: 130, height: 30 },

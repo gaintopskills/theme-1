@@ -11,13 +11,13 @@ const navbarLinks = [
     href: '/#features',
     ariaLabel: 'Services',
     children: [
-      { label: 'Embroidery', href: '/sub-feature3', ariaLabel: 'Sub-feature 3' },
-      { label: 'Screen Printing', href: '/sub-feature4', ariaLabel: 'Sub-feature 4' },
-      { label: 'DTG', href: '/sub-feature5', ariaLabel: 'Sub-feature 5'},
-      { label: 'Digital Sublimation', href: '/sub-feature6', ariaLabel: 'Sub-feature 6'},
-      { label: 'Heat Transfer', href: '/sub-feature7', ariaLabel: 'Sub-feature 7'},
-      { label: 'Cut & Saw', href: '/sub-feature6', ariaLabel: 'Sub-feature 6'},
-      { label: 'Blank Apparel', href: '/sub-feature6', ariaLabel: 'Sub-feature 6'},
+      { label: 'Embroidery', href: '/sub-feature3', ariaLabel: 'Sub-feature 3', image: '/menu/custom-embroidery-services.webp' },
+      { label: 'Screen Printing', href: '/sub-feature4', ariaLabel: 'Sub-feature 4', image: '/menu//screen-printing-services.webp' },
+      { label: 'DTG', href: '/sub-feature5', ariaLabel: 'Sub-feature 5', image: '/menu//dtg-services.webp' },
+      { label: 'Digital Sublimation', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu//digital-sublimation.webp' },
+      { label: 'Heat Transfer', href: '/sub-feature7', ariaLabel: 'Sub-feature 7', image: '/menu//heat-transfer-services.webp' },
+      { label: 'Cut & Saw', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu//cut-and-sew.webp' },
+      { label: 'Blank Apparel', href: '/sub-feature6', ariaLabel: 'Sub-feature 6', image: '/menu//blank-apparel.webp' },
     ],
   },
   { label: 'Galley', href: '/custom-embroidery-services', ariaLabel: 'Galley' },
@@ -80,20 +80,18 @@ export const Navbar = () => {
   <AnimatePresence>
     {subMenuOpen && (
       <motion.div
-        initial={{ opacity: 0, y: 0 }}
+        initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 0 }}
-        className="absolute mt-2 w-48 shadow-lg rounded-lg py-2 z-20 flex flex-col bg-black" // Updated to flex-col for column layout
-        style={{ left: '-40px' }}
+        exit={{ opacity: 0, y: -20 }}
+        className="absolute mt-2 w-full shadow-lg rounded-lg py-2 z-20 flex justify-center gap-0"
+        style={{ left: '110px' }}
       >
         {children.map((child) => (
-          <div key={child.label} className="px-4 py-2">
-            <a
-              href={child.href}
-              className="text-white text-lg hover:bg-gray-700 transition duration-300 rounded-md block text-center"
-            >
+          <div key={child.label} className="mega-menu-column px-2 flex-1 bg-black">
+            <img src={child.image} alt={child.label} className="w-28 h-28 mx-auto mb-1" style={{ width: '100px', height: '120px' }} loading="lazy"/>
+            <h3 className="text-white mb-1 text-lg w-28 text-center hover:bg-gray-700 transition duration-300 rounded-md">
               {child.label}
-            </a>
+            </h3>
           </div>
         ))}
       </motion.div>
