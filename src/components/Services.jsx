@@ -41,7 +41,7 @@ const services = [
     title: "Heat Transfer",
     description:
       "Premium full-color heat transfer services tailored for businesses, sports teams, fashion, and special events. Enjoy competitive pricing, quick turnaround times, and exceptional customer service.",
-    image: "/icons/blank-apparel-provider.webp",
+    image: "/icons/heat-tranfer.webp",
     link: "https://theprinthq.com.au/blank-apparel/",
   },
 ];

@@ -22,6 +22,7 @@ const navbarLinks = [
   { label: 'Galley', href: '/custom-embroidery-services', ariaLabel: 'Galley' },
   { label: 'Events', href: '/#feedback', ariaLabel: 'Events' },
   { label: 'Free Quote', href: '/#FAQ', ariaLabel: 'Free Quote' },
+  { label: 'About Us', href: '/#FAQ', ariaLabel: 'About Us' },
   { label: 'Contact Us', href: '/#FAQ', ariaLabel: 'Contact Us' },
 ];
 
