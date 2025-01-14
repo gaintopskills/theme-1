@@ -41,7 +41,7 @@ export const Gallery3 = () => {
   return (
     <div
       style={{ 
-        marginTop: "-50px",
+        marginTop: "",
         marginBottom: "50px",
         paddingTop: "0",
       paddingTop: "280px",
