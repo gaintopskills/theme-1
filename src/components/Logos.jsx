@@ -24,15 +24,17 @@ export const Logos = () => {
       overflow: 'hidden',
       position: 'relative',
       width: '100%',
-      height: '20px',
+      height: '15px', // Match container height to logo height
     },
     logoTrack: {
       display: 'flex',
-      gap: '20px',
+      gap: '25px',
       animation: 'scroll 15s linear infinite',
       whiteSpace: 'nowrap',
     },
     logoImage: {
+      height: '15px', // Set height to 20px
+      width: 'auto',  // Maintain aspect ratio
       display: 'inline-block',
     },
     '@keyframes scroll': {
@@ -49,8 +51,6 @@ export const Logos = () => {
             key={index}
             src={logo.src}
             alt={logo.alt}
-            width={logo.width}
-            height={logo.height}
             loading="lazy" // Add lazy loading attribute
             style={styles.logoImage}
           />
