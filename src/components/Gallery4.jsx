@@ -60,7 +60,6 @@ export const Gallery4 = () => {
         { src: "/photographic-embroidery/los-angeles-digital-sublimation-photographic-embroidery-photorealistic-embroidery-lips-golden-teeth-custom-clothing.webp", album: "Photographic Embroidery" },
         { src: "https://www.eandrunlimited.com/wp-content/uploads/2022/03/custom-promotional-products-los-angeles.jpg", album: "Patches" },
         { src: "https://www.eandrunlimited.com/wp-content/uploads/2016/09/8e9737839470c7354a95b1a862393874-product-safety-noms-1.jpg", album: "Sublimation" },
-        { src: "https://www.eandrunlimited.com/wp-content/uploads/2022/03/custom-photographic-embroidery-los-angeles.jpg", album: "Photographic Embroidery" },
         { src: "https://www.eandrunlimited.com/wp-content/uploads/2022/03/custom-DIRECT-TO-GARMENT-DIGITAL-PRINTING-services-LOS-ANGELES.jpg", album: "DTG" },
         { src: "https://www.eandrunlimited.com/wp-content/uploads/2017/08/dtla-los-angeles-custom-fashion-screen-printing-black-t-shirt-skull-mason-joe-perez-Resurrection-collection-back.jpg", album: "Screen Printing" },
         { src: "https://www.eandrunlimited.com/wp-content/uploads/2022/03/custom-heat-transfer-on-t-shirts-los-angeles.jpg", album: "Heat Transfer" },
