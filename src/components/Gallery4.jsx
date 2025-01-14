@@ -62,8 +62,12 @@ export const Gallery4 = () => {
         { src: "/screen-printing/dtla-los-angeles-custom-fashion-screen-printing-black-t-shirt-snake-mason-joe-perez-Resurrection-collection-back.webp", album: "Screen Printing" },
         { src: "/screen-printing/best-screen-printing-los-angeles.webp", album: "Screen Printing" },
         { src: "/screen-printing/custom-screen-printing-los-angeles.webp", album: "Screen Printing" },
-        { src: "/photographic-embroidery/los-angeles-digital-sublimation-photographic-embroidery-photorealistic-embroidery-lips-golden-teeth-custom-clothing.webp", album: "Photographic Embroidery" },
-        { src: "https://www.eandrunlimited.com/wp-content/uploads/2022/03/custom-heat-transfer-on-t-shirts-los-angeles.jpg", album: "Heat Transfer" },
+        { src: "/heat-transfer/hat-heat-transfer-services.webp", album: "Heat Transfer" },
+        { src: "/heat-transfer/t-shirt-heat-transfer-services.webp", album: "Heat Transfer" },
+        { src: "/heat-transfer/sleeping-masks-heat-transfer-services.webp", album: "Heat Transfer" },
+        { src: "/heat-transfer/heat-transfer-services-on-hats.webp", album: "Heat Transfer" },
+        { src: "/heat-transfer/hat-heat-transfer-services.webp", album: "Heat Transfer" },
+        { src: "/heat-transfer/custom-heat-transfer-on-t-shirts-los-angeles.webp", album: "Heat Transfer" },
     ];
 
     const [selectedCategory, setSelectedCategory] = useState("All");
