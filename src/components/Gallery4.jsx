@@ -21,7 +21,6 @@ export const Gallery4 = () => {
         { src: "/embroidery/wholesale-custom-hat-embroidery.webp", album: "Embroidery" },
         { src: "/embroidery/high-volume-custom-hat-embroidery..webp", album: "Embroidery" },
         { src: "/embroidery/custom-embroidery-services-los-angeles.webp", album: "Embroidery" },
-        { src: "/embroidery/custom-embroidery-services-los-angeles.webp", album: "Embroidery" },
         { src: "/embroidery/wholesale-custom-embroidered-hats.webp", album: "Embroidery" },
         { src: "/embroidery/wilson-custom-embroidery.webp", album: "Embroidery" },
         { src: "/embroidery/google-cloud-custom-embroidery-logo.webp", album: "Embroidery" },
