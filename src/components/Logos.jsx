@@ -24,7 +24,7 @@ export const Logos = () => {
       overflow: 'hidden',
       position: 'relative',
       width: '100%',
-      height: '50px',
+      height: '20px',
     },
     logoTrack: {
       display: 'flex',
