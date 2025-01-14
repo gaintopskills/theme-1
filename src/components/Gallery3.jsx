@@ -40,16 +40,14 @@ export const Gallery3 = () => {
 
   return (
     <div
-      style={{ 
-        marginTop: "",
-        marginBottom: "50px",
-        paddingTop: "0",
-      paddingTop: "150px",
-      
-      paddingBottom: "280px",
+    className="relative w-full h-80 md:h-96 lg:h-[500px] flex flex-col items-center justify-center bg-black overflow-hidden pt-[150px] lg:pt-[280px]"
+    style={{
+      marginTop: "",
+      marginBottom: "50px",
+      paddingBottom: "280px", // Keeps consistent paddingBottom
     }}
-      className="relative w-full h-80 md:h-96 lg:h-[500px] flex flex-col items-center justify-center bg-black overflow-hidden"
-    >
+  >
+  
       {/* Left Arrow */}
       <button
         onClick={handlePrev}

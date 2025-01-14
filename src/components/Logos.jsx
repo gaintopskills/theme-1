@@ -10,7 +10,7 @@ const logos = [
   { src: '/brands/frame-denim.webp', alt: 'Frame Demin logo', width: 263, height: 30 },
   { src: '/brands/joes.webp', alt: 'Joes', width: 130, height: 30 },
   { src: '/brands/levis.webp', alt: 'Logo Levis logo', width: 136, height: 30 },
-  { src: '/brands/NTWRK.webp', alt: 'NTWRK', width: 137, height: 30 },
+  { src: '/brands/complex.webp', alt: 'Complex', width: 137, height: 30 },
   { src: '/brands/petite-plume.webp', alt: 'NTWRK', width: 421, height: 30 },
   { src: '/brands/todd-snyder.webp', alt: 'NTWRK', width: 135, height: 30 },
   { src: '/brands/ralph-lauren.webp', alt: 'NTWRK', width: 390, height: 30 },
@@ -24,16 +24,16 @@ export const Logos = () => {
       overflow: 'hidden',
       position: 'relative',
       width: '100%',
-      height: '15px', // Match container height to logo height
+      height: '17px', // Match container height to logo height
     },
     logoTrack: {
       display: 'flex',
-      gap: '25px',
+      gap: '40px',
       animation: 'scroll 15s linear infinite',
       whiteSpace: 'nowrap',
     },
     logoImage: {
-      height: '15px', // Set height to 20px
+      height: '17px', // Set height to 20px
       width: 'auto',  // Maintain aspect ratio
       display: 'inline-block',
     },

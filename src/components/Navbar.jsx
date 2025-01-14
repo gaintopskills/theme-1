@@ -17,7 +17,6 @@ const navbarLinks = [
       { label: 'Digital Sublimation', href: '/sub-feature6', ariaLabel: 'Sub-feature 6'},
       { label: 'Heat Transfer', href: '/sub-feature7', ariaLabel: 'Sub-feature 7'},
       { label: 'Cut & Saw', href: '/sub-feature6', ariaLabel: 'Sub-feature 6'},
-      { label: 'Blank Apparel', href: '/sub-feature6', ariaLabel: 'Sub-feature 6'},
     ],
   },
   { label: 'Galley', href: '/custom-embroidery-services', ariaLabel: 'Galley' },
