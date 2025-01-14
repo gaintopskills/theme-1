@@ -90,10 +90,10 @@ export const Gallery4 = () => {
                         <button
                             key={category}
                             onClick={() => setSelectedCategory(category)}
-                            className={`px-4 py-2 rounded-full font-bold shadow-md ${
+                            className={`px-4 py-2 rounded-md font-bold shadow-md ${
                                 selectedCategory === category
-                                    ? "bg-blue-600 text-white"
-                                    : "bg-gray-400 hover:bg-gray-500 text-white"
+                                    ? "bg-gray-600 text-white"
+                                    : "bg-gray-400 hover:bg-red-800 text-white"
                             }`}
                         >
                             {category}
