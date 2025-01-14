@@ -23,7 +23,7 @@ const navbarLinks = [
   { label: 'Events', href: '/#feedback', ariaLabel: 'Events' },
   { label: 'Free Quote', href: '/#FAQ', ariaLabel: 'Free Quote' },
   { label: 'About Us', href: '/#FAQ', ariaLabel: 'About Us' },
-  { label: 'Contact Us', href: '/#FAQ', ariaLabel: 'Contact Us' },
+  { label: 'Contact', href: '/#FAQ', ariaLabel: 'Contact' },
 ];
 
 export const Navbar = () => {
