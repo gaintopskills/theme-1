@@ -79,9 +79,10 @@ export const Gallery4 = () => {
 
     return (
         <div className="min-h-screen p-6 bg-black text-white">
-            <header className="flex justify-between items-center bg-gray-800 text-white p-4 rounded">
-                <h1 className="text-xl font-bold">Gallery</h1>
-            </header>
+           
+                <h1>Gallery</h1>
+           <p>Our diverse embellishment techniques are done in one house and can be combined to create stunning results! See the examples of our work below.</p>
+<p>From simple samples to full-fledged production of 15,000 + units, we are ready to take on any project.</p>
 
             <main className="p-4">
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -107,7 +108,7 @@ export const Gallery4 = () => {
                             src={image.src}
                             alt={image.album}
                             loading="lazy"
-                            className="rounded shadow-md object-cover w-full transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer"
+                            className="h-96 rounded shadow-md object-cover w-full transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer"
                             onClick={() => setLightboxImage(image)}
                         />
                     ))}
