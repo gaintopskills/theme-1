@@ -68,7 +68,6 @@ export const Gallery4 = () => {
         { src: "/screen-printing/custom-screen-printing-los-angeles.webp", album: "Screen Printing" },
         { src: "/screen-printing/custom-screen-printing-on-hoodie-services-los-angeless.webp", album: "Screen Printing" },
         { src: "/photographic-embroidery/los-angeles-digital-sublimation-photographic-embroidery-photorealistic-embroidery-lips-golden-teeth-custom-clothing.webp", album: "Photographic Embroidery" },
-        { src: "https://www.eandrunlimited.com/wp-content/uploads/2017/08/dtla-los-angeles-custom-fashion-screen-printing-black-t-shirt-skull-mason-joe-perez-Resurrection-collection-back.jpg", album: "Screen Printing" },
         { src: "https://www.eandrunlimited.com/wp-content/uploads/2022/03/custom-heat-transfer-on-t-shirts-los-angeles.jpg", album: "Heat Transfer" },
     ];
 
