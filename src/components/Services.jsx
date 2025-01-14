@@ -38,9 +38,9 @@ const services = [
     link: "https://theprinthq.com.au/vinyl-heat-transfers/",
   },
   {
-    title: "Blank Apparel",
+    title: "Heat Transfer",
     description:
-      "Our Blank Apparel services offer a wide range of high-quality, versatile garments ready for customization. From t-shirts to hoodies, we partner with top wholesale brands to provide styles and fabrics that meet your printing, embroidery, or branding needs.",
+      "Premium full-color heat transfer services tailored for businesses, sports teams, fashion, and special events. Enjoy competitive pricing, quick turnaround times, and exceptional customer service.",
     image: "/icons/blank-apparel-provider.webp",
     link: "https://theprinthq.com.au/blank-apparel/",
   },
@@ -72,20 +72,6 @@ export const ServicesSection = () => {
             <a href={service.link}>{service.title}</a>
           </h3>
           <p className="text-gray-400">{service.description}</p>
-          <div className="flex flex-wrap justify-center mt-4 space-x-4">
-            <a
-              href={service.link}
-              className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-500 transition duration-300"
-            >
-              Learn More
-            </a>
-            <a
-              href="#quote"
-              className="px-4 py-2 bg-red-800 text-white rounded-md hover:bg-red-700 transition duration-300"
-            >
-              Request a Quote
-            </a>
-          </div>
         </div>
       </motion.div>
     ))}
