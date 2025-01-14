@@ -44,7 +44,7 @@ export const Gallery3 = () => {
         marginTop: "",
         marginBottom: "50px",
         paddingTop: "0",
-      paddingTop: "280px",
+      paddingTop: "150px",
       
       paddingBottom: "280px",
     }}
