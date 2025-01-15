@@ -15,12 +15,12 @@ const images = [
 // Custom captions corresponding to the images
 const captions = [
   "Bulk Embroidery Services in Los Angeles",
-  "Wholesale Embroidery in Los Angeles",
+  "Wholesale Custom Embroidery in Los Angeles",
   "Custom Fashion Embroidery Services",
-  "Bulk Embroidery Services Again",
+  "Bulk Embroidery Services",
   "High-End Embroidery for Custom Designs",
   "High-Volume Embroidery in Los Angeles",
-  "Luxury Screen Printing in Los Angeles",
+  "High-End Screen Printing in Los Angeles",
   "Denim Jacket Embroidery Services",
   "Custom Embroidery Patches in LA",
 ];
