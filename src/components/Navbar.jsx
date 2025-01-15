@@ -19,7 +19,7 @@ const navbarLinks = [
       { label: 'Cut & Saw', href: '/sub-feature6', ariaLabel: 'Sub-feature 6'},
     ],
   },
-  { label: 'Galley', href: '/custom-embroidery-services', ariaLabel: 'Galley' },
+  { label: 'Galley', href: '../custom-embroidery-services', ariaLabel: 'Galley' },
   { label: 'Events', href: '/#feedback', ariaLabel: 'Events' },
   { label: 'Free Quote', href: '/#FAQ', ariaLabel: 'Free Quote' },
   { label: 'About Us', href: '/#FAQ', ariaLabel: 'About Us' },
