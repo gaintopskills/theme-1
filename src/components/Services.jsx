@@ -68,11 +68,20 @@ export const ServicesSection = () => {
           </a>
         </figure>
         <div className="text-center md:text-left">
-          <h3 className="text-lg font-bold text-white hover:text-gray-400 transition-colors">
-            <a href={service.link}>{service.title}</a>
-          </h3>
-          <p className="text-gray-400">{service.description}</p>
-        </div>
+  <h3 className="text-2xl font-bold">
+    {/* Title as a clickable link */}
+    <a
+      href={service.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white hover:text-gray-400 transition-colors"
+    >
+      {service.title}
+    </a>
+  </h3>
+  <p className="text-gray-400">{service.description}</p>
+</div>
+
       </motion.div>
     ))}
   </section>
