@@ -12,7 +12,7 @@ const navbarLinks = [
     ariaLabel: 'Services',
     children: [
       { label: 'Embroidery', href: 'los-angeles-heat-transfer', ariaLabel: 'Sub-feature 3' },
-      { label: 'Screen Printing', href: '/sub-feature4', ariaLabel: 'Sub-feature 4' },
+      { label: 'Screen Printing', href: '../custom-patches-los-angeles', ariaLabel: 'Sub-feature 4' },
       { label: 'DTG', href: '/sub-feature5', ariaLabel: 'Sub-feature 5'},
       { label: 'Digital Sublimation', href: '/sub-feature6', ariaLabel: 'Sub-feature 6'},
       { label: 'Heat Transfer', href: '/sub-feature7', ariaLabel: 'Sub-feature 7'},
