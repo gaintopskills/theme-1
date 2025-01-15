@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Navbar } from '../components/Navbar.jsx'
+import { Footer } from '../components/Footer.jsx'
+import { ScrollUpButton } from '../components/ScrollUpButton.jsx'
+---
+
+<Layout title="Tailcast">
+  <Navbar client:load />
+  
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>
